@@ -11,6 +11,7 @@ import android.graphics.Typeface
 import android.graphics.drawable.Drawable
 import android.media.ThumbnailUtils
 import android.util.AttributeSet
+import android.util.Log
 import androidx.appcompat.widget.AppCompatImageView
 import com.getstream.sdk.chat.ImageLoader
 import com.getstream.sdk.chat.utils.LlcMigrationUtils
@@ -27,6 +28,12 @@ class AvatarView @JvmOverloads constructor(
     defStyleAttr: Int = 0
 ) : AppCompatImageView(context, attrs, defStyleAttr) {
 
+    private var user: User? = null
+    private var channel: Channel? = null
+    private val lastActiveUsers = mutableListOf<User>()
+    private var imageUrl = ""
+    private var initials = ""
+
     fun setLastActiveUsers(lastActiveUsers: List<User>, style: BaseStyle) {
         configUIs(style) { AvatarDrawable(lastActiveUsers.createBitmaps(style)) }
     }
@@ -36,6 +43,10 @@ class AvatarView @JvmOverloads constructor(
         lastActiveUsers: List<User>,
         style: BaseStyle
     ) {
+        user = null
+        this.lastActiveUsers.clear()
+        this.lastActiveUsers.addAll(lastActiveUsers)
+        this.channel = channel?.copy(messages = emptyList(), members = emptyList())
         configUIs(style) {
             AvatarDrawable(
                 channel?.createBitmap(style)?.let { listOf(it) }
@@ -45,6 +56,9 @@ class AvatarView @JvmOverloads constructor(
     }
 
     fun setUser(user: User, style: BaseStyle) {
+        channel = null
+        this.user = user
+        lastActiveUsers.clear()
         configUIs(style) { AvatarDrawable(listOfNotNull(user.createBitmap(style))) }
     }
 
@@ -55,6 +69,7 @@ class AvatarView @JvmOverloads constructor(
                 height = style.getAvatarHeight()
             }
             setImageDrawable(generateAvatarDrawable())
+            Log.d("JcRoomiLogV4", "channel -> $channel\nUser -> $user\nListOfUser -> $lastActiveUsers\nImageUrl -> $imageUrl\nInitials -> $initials")
         }
     }
 
@@ -63,8 +78,8 @@ class AvatarView @JvmOverloads constructor(
             context,
             getExtraValue("image", ""),
             ImageLoader.ImageTransformation.Circle
-        )
-            ?: createImageRounded(LlcMigrationUtils.getInitials(this) ?: "", style)
+        )?.also { imageUrl = getExtraValue("image", "") }
+            ?: createImageRounded(LlcMigrationUtils.getInitials(this)?.also { initials = it } ?: "", style)
 
     private suspend fun List<User>.createBitmaps(style: BaseStyle): List<Bitmap> =
         take(3).mapNotNull { it.createBitmap(style) }
@@ -74,8 +89,11 @@ class AvatarView @JvmOverloads constructor(
             context,
             getExtraValue("image", ""),
             ImageLoader.ImageTransformation.Circle
-        )
-            ?: LlcMigrationUtils.getInitials(this)?.let { createImageRounded(it, style) }
+        )?.also { imageUrl = getExtraValue("image", "") }
+            ?: LlcMigrationUtils.getInitials(this)?.let {
+                initials = it
+                createImageRounded(it, style)
+            }
 
     private fun createImageRounded(initials: String, baseStyle: BaseStyle): Bitmap {
         val paintText = Paint(Paint.ANTI_ALIAS_FLAG).apply {
