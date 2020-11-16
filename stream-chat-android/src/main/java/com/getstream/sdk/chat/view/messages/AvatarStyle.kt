@@ -17,7 +17,7 @@ public data class AvatarStyle internal constructor(
     public val avatarBackgroundColor: Int,
     public val avatarInitialText: TextStyle,
 ) {
-    internal class Builder(private val a: TypedArray, c: Context) {
+    public class Builder(private val a: TypedArray, c: Context) {
         private val res = c.resources
 
         private var avatarWidth: Int = 0
@@ -27,51 +27,51 @@ public data class AvatarStyle internal constructor(
         private var avatarBackgroundColor: Int = 0
         private var avatarInitialText: TextStyle = TextStyle()
 
-        fun avatarWidth(
+        public fun avatarWidth(
             @StyleableRes avatarWidthStyleableId: Int,
             @DimenRes defaultValue: Int
-        ) = apply {
+        ): Builder = apply {
             avatarWidth = a.getDimensionPixelSize(
                 avatarWidthStyleableId,
                 res.getDimensionPixelSize(defaultValue)
             )
         }
 
-        fun avatarHeight(
+        public fun avatarHeight(
             @StyleableRes avatarHeightStyleableId: Int,
             @DimenRes defaultValue: Int
-        ) = apply {
+        ): Builder = apply {
             avatarHeight = a.getDimensionPixelSize(
                 avatarHeightStyleableId,
                 res.getDimensionPixelSize(defaultValue)
             )
         }
 
-        fun avatarBorderWidth(
+        public fun avatarBorderWidth(
             @StyleableRes avatarBorderWidthStyleableId: Int,
             @DimenRes defaultValue: Int
-        ) = apply {
+        ): Builder = apply {
             avatarBorderWidth = a.getDimensionPixelSize(
                 avatarBorderWidthStyleableId,
                 res.getDimensionPixelSize(defaultValue)
             )
         }
 
-        fun avatarBorderColor(
+        public fun avatarBorderColor(
             @StyleableRes avatarBorderColorStyleableId: Int,
             @ColorInt defaultColor: Int
-        ) = apply {
+        ): Builder = apply {
             avatarBorderColor = a.getColor(avatarBorderColorStyleableId, defaultColor)
         }
 
-        fun avatarBackgroundColor(
+        public fun avatarBackgroundColor(
             @StyleableRes avatarBackgroundColorStyleableId: Int,
             @ColorInt defaultColor: Int
-        ) = apply {
+        ): Builder = apply {
             avatarBackgroundColor = a.getColor(avatarBackgroundColorStyleableId, defaultColor)
         }
 
-        fun avatarInitialText(
+        public fun avatarInitialText(
             @StyleableRes avatarTextSizeStyleableId: Int,
             @DimenRes avatarTextSizeDefaultValue: Int,
             @StyleableRes avatarTextColorStyleableId: Int,
@@ -80,7 +80,7 @@ public data class AvatarStyle internal constructor(
             @StyleableRes avatarTextFontStyleableId: Int = R.styleable.MessageListView_streamAvatarTextFont,
             @StyleableRes avatarTextStyleStyleableId: Int,
             defaultTextStyle: Int = Typeface.BOLD,
-        ) = apply {
+        ): Builder = apply {
             avatarInitialText = TextStyle.Builder(a)
                 .size(
                     avatarTextSizeStyleableId,
@@ -92,7 +92,7 @@ public data class AvatarStyle internal constructor(
                 .build()
         }
 
-        fun build(): AvatarStyle =
+        public fun build(): AvatarStyle =
             AvatarStyle(
                 avatarWidth,
                 avatarHeight,

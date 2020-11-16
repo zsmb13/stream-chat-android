@@ -49,6 +49,8 @@ class ChannelFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        binding.messageListView.setMessageViewHolderFactory(MyCustomMessageViewHolderFactory())
+
         initMessagesViewModel()
         initHeaderViewModel()
         initMessageInputViewModel()
