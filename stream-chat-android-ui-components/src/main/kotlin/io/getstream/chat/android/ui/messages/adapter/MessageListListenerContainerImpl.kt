@@ -4,6 +4,7 @@ import com.getstream.sdk.chat.utils.ListenerDelegate
 import io.getstream.chat.android.ui.messages.view.MessageListView.AttachmentClickListener
 import io.getstream.chat.android.ui.messages.view.MessageListView.GiphySendListener
 import io.getstream.chat.android.ui.messages.view.MessageListView.MessageClickListener
+import io.getstream.chat.android.ui.messages.view.MessageListView.MessageFootnoteClickListener
 import io.getstream.chat.android.ui.messages.view.MessageListView.MessageLongClickListener
 import io.getstream.chat.android.ui.messages.view.MessageListView.MessageRetryListener
 import io.getstream.chat.android.ui.messages.view.MessageListView.ReactionViewClickListener
@@ -12,13 +13,14 @@ import io.getstream.chat.android.ui.messages.view.MessageListView.UserClickListe
 
 internal class MessageListListenerContainerImpl(
     messageClickListener: MessageClickListener = MessageClickListener(EmptyFunctions.ONE_PARAM),
+    messageFootnoteClickListener: MessageFootnoteClickListener = MessageFootnoteClickListener(EmptyFunctions.ONE_PARAM),
     messageLongClickListener: MessageLongClickListener = MessageLongClickListener(EmptyFunctions.ONE_PARAM),
     messageRetryListener: MessageRetryListener = MessageRetryListener(EmptyFunctions.ONE_PARAM),
     attachmentClickListener: AttachmentClickListener = AttachmentClickListener(EmptyFunctions.TWO_PARAM),
     reactionViewClickListener: ReactionViewClickListener = ReactionViewClickListener(EmptyFunctions.ONE_PARAM),
     userClickListener: UserClickListener = UserClickListener(EmptyFunctions.ONE_PARAM),
     readStateClickListener: ReadStateClickListener = ReadStateClickListener(EmptyFunctions.ONE_PARAM),
-    giphySendListener: GiphySendListener = GiphySendListener(EmptyFunctions.TWO_PARAM)
+    giphySendListener: GiphySendListener = GiphySendListener(EmptyFunctions.TWO_PARAM),
 ) : MessageListListenerContainer {
     private object EmptyFunctions {
         val ONE_PARAM: (Any) -> Unit = { _ -> Unit }
@@ -29,6 +31,14 @@ internal class MessageListListenerContainerImpl(
         messageClickListener
     ) { realListener ->
         MessageClickListener { message ->
+            realListener().onMessageClick(message)
+        }
+    }
+
+    override var messageFootnoteClickListener: MessageFootnoteClickListener by ListenerDelegate(
+        messageFootnoteClickListener
+    ) { realListener ->
+        MessageFootnoteClickListener { message ->
             realListener().onMessageClick(message)
         }
     }

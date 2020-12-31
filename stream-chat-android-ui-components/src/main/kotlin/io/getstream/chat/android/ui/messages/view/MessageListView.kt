@@ -842,6 +842,10 @@ public class MessageListView : ConstraintLayout {
         public fun onMessageClick(message: Message)
     }
 
+    public fun interface MessageFootnoteClickListener {
+        public fun onMessageClick(message: Message)
+    }
+
     public fun interface MessageRetryListener {
         public fun onRetryMessage(message: Message)
     }
