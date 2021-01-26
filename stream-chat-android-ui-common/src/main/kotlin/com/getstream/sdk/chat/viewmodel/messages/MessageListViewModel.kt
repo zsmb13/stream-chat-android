@@ -121,8 +121,8 @@ public class MessageListViewModel @JvmOverloads constructor(
                         MESSAGES_LIMIT
                     ).enqueue {
                         if (it.isSuccess) {
-                            _targetMessage.value = it.data()
                             onNormalModeEntered()
+                            _targetMessage.value = it.data()
                         } else {
                             stateMerger.value = State.Result(MessageListItemWrapper())
                         }
