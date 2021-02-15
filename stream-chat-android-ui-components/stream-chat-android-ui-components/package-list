@@ -330,8 +330,9 @@ $dokka.location:io.getstream.chat.android.ui.mention.list/MentionListView/setMen
 $dokka.location:io.getstream.chat.android.ui.mention.list/MentionListView/showError/#/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.mention.list/-mention-list-view/show-error.html
 $dokka.location:io.getstream.chat.android.ui.mention.list/MentionListView/showLoading/#/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.mention.list/-mention-list-view/show-loading.html
 $dokka.location:io.getstream.chat.android.ui.mention.list/MentionListView/showMessages/#kotlin.collections.List[io.getstream.chat.android.client.models.Message]/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.mention.list/-mention-list-view/show-messages.html
+$dokka.location:io.getstream.chat.android.ui.message.input.viewmodel////PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.input.viewmodel/index.html
+$dokka.location:io.getstream.chat.android.ui.message.input.viewmodel//bindView/com.getstream.sdk.chat.viewmodel.MessageInputViewModel#io.getstream.chat.android.ui.message.input.MessageInputView#androidx.lifecycle.LifecycleOwner/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.input.viewmodel/bind-view.html
 $dokka.location:io.getstream.chat.android.ui.message.input////PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.input/index.html
-$dokka.location:io.getstream.chat.android.ui.message.input//bindView/com.getstream.sdk.chat.viewmodel.MessageInputViewModel#io.getstream.chat.android.ui.message.input.MessageInputView#androidx.lifecycle.LifecycleOwner/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.input/bind-view.html
 $dokka.location:io.getstream.chat.android.ui.message.input/MessageInputView.ChatMode.DIRECT_CHAT///PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.input/-message-input-view/-chat-mode/-d-i-r-e-c-t_-c-h-a-t/index.html
 $dokka.location:io.getstream.chat.android.ui.message.input/MessageInputView.ChatMode.DIRECT_CHAT/name/#/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.input/-message-input-view/-chat-mode/-d-i-r-e-c-t_-c-h-a-t/name.html
 $dokka.location:io.getstream.chat.android.ui.message.input/MessageInputView.ChatMode.DIRECT_CHAT/ordinal/#/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.input/-message-input-view/-chat-mode/-d-i-r-e-c-t_-c-h-a-t/ordinal.html
@@ -493,6 +494,8 @@ $dokka.location:io.getstream.chat.android.ui.message.list.viewmodel.factory////P
 $dokka.location:io.getstream.chat.android.ui.message.list.viewmodel.factory/MessageListViewModelFactory///PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.list.viewmodel.factory/-message-list-view-model-factory/index.html
 $dokka.location:io.getstream.chat.android.ui.message.list.viewmodel.factory/MessageListViewModelFactory/MessageListViewModelFactory/#kotlin.String#kotlin.String?/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.list.viewmodel.factory/-message-list-view-model-factory/-message-list-view-model-factory.html
 $dokka.location:io.getstream.chat.android.ui.message.list.viewmodel.factory/MessageListViewModelFactory/create/#java.lang.Class[TypeParam(bounds=[androidx.lifecycle.ViewModel])]/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.list.viewmodel.factory/-message-list-view-model-factory/create.html
+$dokka.location:io.getstream.chat.android.ui.message.list.viewmodel////PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.list.viewmodel/index.html
+$dokka.location:io.getstream.chat.android.ui.message.list.viewmodel//bindView/com.getstream.sdk.chat.viewmodel.messages.MessageListViewModel#io.getstream.chat.android.ui.message.list.MessageListView#androidx.lifecycle.LifecycleOwner/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.list.viewmodel/bind-view.html
 $dokka.location:io.getstream.chat.android.ui.message.list////PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.list/index.html
 $dokka.location:io.getstream.chat.android.ui.message.list/MessageListView.AttachmentClickListener///PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.list/-message-list-view/-attachment-click-listener/index.html
 $dokka.location:io.getstream.chat.android.ui.message.list/MessageListView.AttachmentClickListener/onAttachmentClick/#io.getstream.chat.android.client.models.Message#io.getstream.chat.android.client.models.Attachment/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.list/-message-list-view/-attachment-click-listener/on-attachment-click.html
@@ -602,8 +605,6 @@ $dokka.location:io.getstream.chat.android.ui.message.list/MessageListView/setUse
 $dokka.location:io.getstream.chat.android.ui.message.list/MessageListView/setUserMuteHandler/#io.getstream.chat.android.ui.message.list.MessageListView.UserMuteHandler/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.list/-message-list-view/set-user-mute-handler.html
 $dokka.location:io.getstream.chat.android.ui.message.list/MessageListView/showEmptyStateView/#/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.list/-message-list-view/show-empty-state-view.html
 $dokka.location:io.getstream.chat.android.ui.message.list/MessageListView/showLoadingView/#/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.list/-message-list-view/show-loading-view.html
-$dokka.location:io.getstream.chat.android.ui.message.view////PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.view/index.html
-$dokka.location:io.getstream.chat.android.ui.message.view//bindView/com.getstream.sdk.chat.viewmodel.messages.MessageListViewModel#io.getstream.chat.android.ui.message.list.MessageListView#androidx.lifecycle.LifecycleOwner/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.message.view/bind-view.html
 $dokka.location:io.getstream.chat.android.ui.search.list.viewmodel////PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.search.list.viewmodel/index.html
 $dokka.location:io.getstream.chat.android.ui.search.list.viewmodel//bindView/io.getstream.chat.android.ui.search.list.viewmodel.SearchViewModel#io.getstream.chat.android.ui.search.list.SearchResultListView#androidx.lifecycle.LifecycleOwner/PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.search.list.viewmodel/bind-view.html
 $dokka.location:io.getstream.chat.android.ui.search.list.viewmodel/SearchViewModel.State///PointingToDeclaration/stream-chat-android-ui-components/io.getstream.chat.android.ui.search.list.viewmodel/-search-view-model/-state/index.html
@@ -703,6 +704,7 @@ io.getstream.chat.android.ui.gallery.overview
 io.getstream.chat.android.ui.mention.list
 io.getstream.chat.android.ui.mention.list.viewmodel
 io.getstream.chat.android.ui.message.input
+io.getstream.chat.android.ui.message.input.viewmodel
 io.getstream.chat.android.ui.message.list
 io.getstream.chat.android.ui.message.list.adapter
 io.getstream.chat.android.ui.message.list.header
@@ -711,8 +713,8 @@ io.getstream.chat.android.ui.message.list.reactions
 io.getstream.chat.android.ui.message.list.reactions.edit.internal
 io.getstream.chat.android.ui.message.list.reactions.user.internal
 io.getstream.chat.android.ui.message.list.reactions.view.internal
+io.getstream.chat.android.ui.message.list.viewmodel
 io.getstream.chat.android.ui.message.list.viewmodel.factory
-io.getstream.chat.android.ui.message.view
 io.getstream.chat.android.ui.search
 io.getstream.chat.android.ui.search.list
 io.getstream.chat.android.ui.search.list.viewmodel

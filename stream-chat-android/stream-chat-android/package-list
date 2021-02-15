@@ -414,6 +414,7 @@ $dokka.location:com.getstream.sdk.chat.view/MessageListViewStyle/isMessageDateSh
 $dokka.location:com.getstream.sdk.chat.view/MessageListViewStyle/isReactionEnabled/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-message-list-view-style/is-reaction-enabled.html
 $dokka.location:com.getstream.sdk.chat.view/MessageListViewStyle/isThreadEnabled/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-message-list-view-style/is-thread-enabled.html
 $dokka.location:com.getstream.sdk.chat.view/MessageListViewStyle/isUserNameShow/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-message-list-view-style/is-user-name-show.html
+$dokka.location:com.getstream.sdk.chat.view/MessageListViewStyle/messageActionButtonsBackground/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-message-list-view-style/message-action-buttons-background.html
 $dokka.location:com.getstream.sdk.chat.view/MessageListViewStyle/messageDateTextMine/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-message-list-view-style/message-date-text-mine.html
 $dokka.location:com.getstream.sdk.chat.view/MessageListViewStyle/messageDateTextTheirs/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-message-list-view-style/message-date-text-theirs.html
 $dokka.location:com.getstream.sdk.chat.view/MessageListViewStyle/messageTextMine/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-message-list-view-style/message-text-mine.html
