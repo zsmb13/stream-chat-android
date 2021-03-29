@@ -29,7 +29,7 @@ internal class GiphyViewHolder(
             sendButton.setOnClickListener {
                 listeners.giphySendListener.onGiphySend(data.message, GiphyAction.SEND)
             }
-            nextButton.setOnClickListener {
+            shuffleButton.setOnClickListener {
                 listeners.giphySendListener.onGiphySend(data.message, GiphyAction.SHUFFLE)
             }
         }

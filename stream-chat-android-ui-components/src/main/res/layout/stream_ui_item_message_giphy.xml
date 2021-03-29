@@ -32,6 +32,19 @@
             android:layout_height="wrap_content"
             >
 
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/giphyTextLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/StreamUiTextAppearance.Body"
+                android:textStyle="italic"
+                tools:text="Some giphy label"
+                />
+
             <io.getstream.chat.android.ui.message.list.adapter.view.internal.MediaAttachmentView
                 android:id="@+id/mediaAttachmentView"
                 android:layout_width="match_parent"
@@ -41,64 +54,6 @@
                 app:layout_constraintTop_toTopOf="parent"
                 />
 
-            <ImageView
-                android:id="@+id/previousButton"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/stream_ui_circle_white"
-                android:clickable="false"
-                android:elevation="@dimen/stream_ui_elevation_small"
-                android:paddingStart="3dp"
-                android:paddingTop="4dp"
-                android:paddingEnd="5dp"
-                android:paddingBottom="4dp"
-                android:src="@drawable/stream_ui_arrow_left_rounded"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="@id/giphyTextLabel"
-                app:layout_constraintTop_toBottomOf="@id/mediaAttachmentView"
-                app:tint="#DBDBDB"
-                tools:ignore="ContentDescription"
-                />
-
-            <TextView
-                android:id="@+id/giphyTextLabel"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textAppearance="@style/StreamUiTextAppearance.Body"
-                android:textStyle="italic"
-                app:layout_constraintBottom_toBottomOf="@id/previousButton"
-                app:layout_constraintLeft_toRightOf="@id/previousButton"
-                app:layout_constraintRight_toLeftOf="@id/nextButton"
-                app:layout_constraintTop_toTopOf="@id/previousButton"
-                tools:text="Some giphy label"
-                />
-
-            <ImageView
-                android:id="@+id/nextButton"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/stream_ui_circle_white"
-                android:duplicateParentState="false"
-                android:elevation="@dimen/stream_ui_elevation_small"
-                android:paddingStart="5dp"
-                android:paddingTop="4dp"
-                android:paddingEnd="3dp"
-                android:paddingBottom="4dp"
-                android:src="@drawable/stream_ui_arrow_right_rounded"
-                app:layout_constraintBottom_toBottomOf="@id/previousButton"
-                app:layout_constraintHorizontal_chainStyle="spread_inside"
-                app:layout_constraintLeft_toRightOf="@id/giphyTextLabel"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="@id/previousButton"
-                app:tint="#000000"
-                tools:ignore="ContentDescription"
-                />
-
             <View
                 android:id="@+id/horizontalDivider"
                 android:layout_width="match_parent"
@@ -106,7 +61,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@color/stream_ui_border"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/previousButton"
+                app:layout_constraintTop_toBottomOf="@id/mediaAttachmentView"
                 />
 
             <TextView
@@ -122,17 +77,39 @@
                 android:textColor="@color/stream_ui_text_color_secondary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="@id/verticalDivider"
                 app:layout_constraintTop_toBottomOf="@id/horizontalDivider"
                 />
 
             <View
-                android:id="@+id/verticalDivider"
                 android:layout_width="1dp"
                 android:layout_height="0dp"
                 android:background="@color/stream_ui_border"
                 app:layout_constraintBottom_toBottomOf="@id/cancel_button"
                 app:layout_constraintLeft_toRightOf="@id/cancel_button"
+                app:layout_constraintRight_toLeftOf="@id/shuffleButton"
+                app:layout_constraintTop_toTopOf="@id/cancel_button"
+                />
+
+            <TextView
+                android:id="@+id/shuffleButton"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="?selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/stream_ui_send_label"
+                android:textAppearance="@style/StreamUiTextAppearance.BodyBold"
+                android:textColor="@color/stream_ui_accent_blue"
+                app:layout_constraintBottom_toBottomOf="@id/cancel_button"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/cancel_button"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="@color/stream_ui_border"
+                app:layout_constraintBottom_toBottomOf="@id/cancel_button"
+                app:layout_constraintLeft_toRightOf="@id/shuffleButton"
                 app:layout_constraintRight_toLeftOf="@id/sendButton"
                 app:layout_constraintTop_toTopOf="@id/cancel_button"
                 />
@@ -147,7 +124,6 @@
                 android:textAppearance="@style/StreamUiTextAppearance.BodyBold"
                 android:textColor="@color/stream_ui_accent_blue"
                 app:layout_constraintBottom_toBottomOf="@id/cancel_button"
-                app:layout_constraintLeft_toRightOf="@id/verticalDivider"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="@id/cancel_button"
                 />
