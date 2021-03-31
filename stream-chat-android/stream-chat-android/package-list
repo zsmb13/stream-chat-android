@@ -13,8 +13,6 @@ $dokka.location:com.getstream.sdk.chat.adapter////PointingToDeclaration/stream-
 $dokka.location:com.getstream.sdk.chat.adapter/AttachmentListItem///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-attachment-list-item/index.html
 $dokka.location:com.getstream.sdk.chat.adapter/AttachmentListItem/AttachmentListItem/#io.getstream.chat.android.client.models.Attachment/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-attachment-list-item/-attachment-list-item.html
 $dokka.location:com.getstream.sdk.chat.adapter/AttachmentListItem/attachment/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-attachment-list-item/attachment.html
-$dokka.location:com.getstream.sdk.chat.adapter/AttachmentListItem/component1/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-attachment-list-item/component1.html
-$dokka.location:com.getstream.sdk.chat.adapter/AttachmentListItem/copy/#io.getstream.chat.android.client.models.Attachment/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-attachment-list-item/copy.html
 $dokka.location:com.getstream.sdk.chat.adapter/AttachmentViewHolderFactory.Companion///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-attachment-view-holder-factory/-companion/index.html
 $dokka.location:com.getstream.sdk.chat.adapter/AttachmentViewHolderFactory.Companion/FILE_ATTACHMENT/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-attachment-view-holder-factory/-companion/-f-i-l-e_-a-t-t-a-c-h-m-e-n-t.html
 $dokka.location:com.getstream.sdk.chat.adapter/AttachmentViewHolderFactory.Companion/GENERIC_ATTACHMENT/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-attachment-view-holder-factory/-companion/-g-e-n-e-r-i-c_-a-t-t-a-c-h-m-e-n-t.html
@@ -36,13 +34,6 @@ $dokka.location:com.getstream.sdk.chat.adapter/BaseChannelListItemViewHolder/set
 $dokka.location:com.getstream.sdk.chat.adapter/ChannelItemPayloadDiff///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-channel-item-payload-diff/index.html
 $dokka.location:com.getstream.sdk.chat.adapter/ChannelItemPayloadDiff/ChannelItemPayloadDiff/#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-channel-item-payload-diff/-channel-item-payload-diff.html
 $dokka.location:com.getstream.sdk.chat.adapter/ChannelItemPayloadDiff/avatarView/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-channel-item-payload-diff/avatar-view.html
-$dokka.location:com.getstream.sdk.chat.adapter/ChannelItemPayloadDiff/component1/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-channel-item-payload-diff/component1.html
-$dokka.location:com.getstream.sdk.chat.adapter/ChannelItemPayloadDiff/component2/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-channel-item-payload-diff/component2.html
-$dokka.location:com.getstream.sdk.chat.adapter/ChannelItemPayloadDiff/component3/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-channel-item-payload-diff/component3.html
-$dokka.location:com.getstream.sdk.chat.adapter/ChannelItemPayloadDiff/component4/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-channel-item-payload-diff/component4.html
-$dokka.location:com.getstream.sdk.chat.adapter/ChannelItemPayloadDiff/component5/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-channel-item-payload-diff/component5.html
-$dokka.location:com.getstream.sdk.chat.adapter/ChannelItemPayloadDiff/component6/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-channel-item-payload-diff/component6.html
-$dokka.location:com.getstream.sdk.chat.adapter/ChannelItemPayloadDiff/copy/#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-channel-item-payload-diff/copy.html
 $dokka.location:com.getstream.sdk.chat.adapter/ChannelItemPayloadDiff/lastMessage/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-channel-item-payload-diff/last-message.html
 $dokka.location:com.getstream.sdk.chat.adapter/ChannelItemPayloadDiff/lastMessageDate/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-channel-item-payload-diff/last-message-date.html
 $dokka.location:com.getstream.sdk.chat.adapter/ChannelItemPayloadDiff/name/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-channel-item-payload-diff/name.html
@@ -102,15 +93,6 @@ $dokka.location:com.getstream.sdk.chat.adapter/MessageListItemAdapter/onCreateVi
 $dokka.location:com.getstream.sdk.chat.adapter/MessageListItemPayloadDiff///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-message-list-item-payload-diff/index.html
 $dokka.location:com.getstream.sdk.chat.adapter/MessageListItemPayloadDiff/MessageListItemPayloadDiff/#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-message-list-item-payload-diff/-message-list-item-payload-diff.html
 $dokka.location:com.getstream.sdk.chat.adapter/MessageListItemPayloadDiff/attachments/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-message-list-item-payload-diff/attachments.html
-$dokka.location:com.getstream.sdk.chat.adapter/MessageListItemPayloadDiff/component1/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-message-list-item-payload-diff/component1.html
-$dokka.location:com.getstream.sdk.chat.adapter/MessageListItemPayloadDiff/component2/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-message-list-item-payload-diff/component2.html
-$dokka.location:com.getstream.sdk.chat.adapter/MessageListItemPayloadDiff/component3/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-message-list-item-payload-diff/component3.html
-$dokka.location:com.getstream.sdk.chat.adapter/MessageListItemPayloadDiff/component4/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-message-list-item-payload-diff/component4.html
-$dokka.location:com.getstream.sdk.chat.adapter/MessageListItemPayloadDiff/component5/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-message-list-item-payload-diff/component5.html
-$dokka.location:com.getstream.sdk.chat.adapter/MessageListItemPayloadDiff/component6/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-message-list-item-payload-diff/component6.html
-$dokka.location:com.getstream.sdk.chat.adapter/MessageListItemPayloadDiff/component7/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-message-list-item-payload-diff/component7.html
-$dokka.location:com.getstream.sdk.chat.adapter/MessageListItemPayloadDiff/component8/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-message-list-item-payload-diff/component8.html
-$dokka.location:com.getstream.sdk.chat.adapter/MessageListItemPayloadDiff/copy/#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-message-list-item-payload-diff/copy.html
 $dokka.location:com.getstream.sdk.chat.adapter/MessageListItemPayloadDiff/deleted/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-message-list-item-payload-diff/deleted.html
 $dokka.location:com.getstream.sdk.chat.adapter/MessageListItemPayloadDiff/plus/#com.getstream.sdk.chat.adapter.MessageListItemPayloadDiff/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-message-list-item-payload-diff/plus.html
 $dokka.location:com.getstream.sdk.chat.adapter/MessageListItemPayloadDiff/positions/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-message-list-item-payload-diff/positions.html
@@ -148,6 +130,52 @@ $dokka.location:com.getstream.sdk.chat.adapter/ReactionListItemAdapter/ReactionL
 $dokka.location:com.getstream.sdk.chat.adapter/ReactionListItemAdapter/getItemCount/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-reaction-list-item-adapter/get-item-count.html
 $dokka.location:com.getstream.sdk.chat.adapter/ReactionListItemAdapter/onBindViewHolder/#com.getstream.sdk.chat.adapter.ReactionListItemAdapter.MyViewHolder#int/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-reaction-list-item-adapter/on-bind-view-holder.html
 $dokka.location:com.getstream.sdk.chat.adapter/ReactionListItemAdapter/onCreateViewHolder/#android.view.ViewGroup#int/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.adapter/-reaction-list-item-adapter/on-create-view-holder.html
+$dokka.location:com.getstream.sdk.chat.navigation.destinations////PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.navigation.destinations/index.html
+$dokka.location:com.getstream.sdk.chat.navigation.destinations/AttachmentDestination///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.navigation.destinations/-attachment-destination/index.html
+$dokka.location:com.getstream.sdk.chat.navigation.destinations/AttachmentDestination/AttachmentDestination/#io.getstream.chat.android.client.models.Message#io.getstream.chat.android.client.models.Attachment#android.content.Context/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.navigation.destinations/-attachment-destination/-attachment-destination.html
+$dokka.location:com.getstream.sdk.chat.navigation.destinations/AttachmentDestination/attachment/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.navigation.destinations/-attachment-destination/attachment.html
+$dokka.location:com.getstream.sdk.chat.navigation.destinations/AttachmentDestination/message/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.navigation.destinations/-attachment-destination/message.html
+$dokka.location:com.getstream.sdk.chat.navigation.destinations/AttachmentDestination/navigate/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.navigation.destinations/-attachment-destination/navigate.html
+$dokka.location:com.getstream.sdk.chat.navigation.destinations/AttachmentDestination/showAttachment/#io.getstream.chat.android.client.models.Message#io.getstream.chat.android.client.models.Attachment/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.navigation.destinations/-attachment-destination/show-attachment.html
+$dokka.location:com.getstream.sdk.chat.navigation.destinations/WebLinkDestination///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.navigation.destinations/-web-link-destination/index.html
+$dokka.location:com.getstream.sdk.chat.navigation.destinations/WebLinkDestination/WebLinkDestination/#kotlin.String#android.content.Context/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.navigation.destinations/-web-link-destination/-web-link-destination.html
+$dokka.location:com.getstream.sdk.chat.navigation.destinations/WebLinkDestination/navigate/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.navigation.destinations/-web-link-destination/navigate.html
+$dokka.location:com.getstream.sdk.chat.style////PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/index.html
+$dokka.location:com.getstream.sdk.chat.style/ChatFonts///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-chat-fonts/index.html
+$dokka.location:com.getstream.sdk.chat.style/ChatFonts/getFont/#com.getstream.sdk.chat.style.TextStyle/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-chat-fonts/get-font.html
+$dokka.location:com.getstream.sdk.chat.style/ChatFonts/setFont/#com.getstream.sdk.chat.style.TextStyle#android.widget.TextView/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-chat-fonts/set-font.html
+$dokka.location:com.getstream.sdk.chat.style/ChatFontsImpl///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-chat-fonts-impl/index.html
+$dokka.location:com.getstream.sdk.chat.style/ChatFontsImpl/ChatFontsImpl/#com.getstream.sdk.chat.style.ChatStyle#android.content.Context/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-chat-fonts-impl/-chat-fonts-impl.html
+$dokka.location:com.getstream.sdk.chat.style/ChatFontsImpl/getFont/#com.getstream.sdk.chat.style.TextStyle/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-chat-fonts-impl/get-font.html
+$dokka.location:com.getstream.sdk.chat.style/ChatFontsImpl/setFont/#com.getstream.sdk.chat.style.TextStyle#android.widget.TextView/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-chat-fonts-impl/set-font.html
+$dokka.location:com.getstream.sdk.chat.style/ChatStyle.Builder///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-chat-style/-builder/index.html
+$dokka.location:com.getstream.sdk.chat.style/ChatStyle.Builder/Builder/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-chat-style/-builder/-builder.html
+$dokka.location:com.getstream.sdk.chat.style/ChatStyle.Builder/build/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-chat-style/-builder/build.html
+$dokka.location:com.getstream.sdk.chat.style/ChatStyle.Builder/setDefaultFont/#kotlin.Int/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-chat-style/-builder/set-default-font.html
+$dokka.location:com.getstream.sdk.chat.style/ChatStyle.Builder/setDefaultFont/#kotlin.String/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-chat-style/-builder/set-default-font.html
+$dokka.location:com.getstream.sdk.chat.style/ChatStyle///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-chat-style/index.html
+$dokka.location:com.getstream.sdk.chat.style/ChatStyle/getDefaultTextStyle/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-chat-style/get-default-text-style.html
+$dokka.location:com.getstream.sdk.chat.style/ChatStyle/hasDefaultFont/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-chat-style/has-default-font.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle.Builder///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/-builder/index.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle.Builder/Builder/#android.content.res.TypedArray/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/-builder/-builder.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle.Builder/build/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/-builder/build.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle.Builder/color/#kotlin.Int#kotlin.Int/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/-builder/color.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle.Builder/font/#kotlin.Int#kotlin.Int/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/-builder/font.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle.Builder/hintColor/#kotlin.Int#kotlin.Int/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/-builder/hint-color.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle.Builder/size/#kotlin.Int#kotlin.Int/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/-builder/size.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle.Builder/size/#kotlin.Int/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/-builder/size.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle.Builder/style/#kotlin.Int#kotlin.Int/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/-builder/style.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/index.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle/TextStyle/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/-text-style.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle/apply/#android.widget.TextView/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/apply.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle/color/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/color.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle/font/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/font.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle/fontAssetsPath/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/font-assets-path.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle/fontResource/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/font-resource.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle/hasFont/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/has-font.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle/hintColor/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/hint-color.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle/size/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/size.html
+$dokka.location:com.getstream.sdk.chat.style/TextStyle/style/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.style/-text-style/style.html
 $dokka.location:com.getstream.sdk.chat.utils.roundedImageView////PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.utils.roundedImageView/index.html
 $dokka.location:com.getstream.sdk.chat.utils.roundedImageView/CircularImageView///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.utils.roundedImageView/-circular-image-view/index.html
 $dokka.location:com.getstream.sdk.chat.utils.roundedImageView/CircularImageView/CircularImageView/#android.content.Context#android.util.AttributeSet#int/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.utils.roundedImageView/-circular-image-view/-circular-image-view.html
@@ -187,10 +215,20 @@ $dokka.location:com.getstream.sdk.chat.utils/StringUtility///PointingToDeclarati
 $dokka.location:com.getstream.sdk.chat.utils/StringUtility/convertMentionedText/#kotlin.String#kotlin.String/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.utils/-string-utility/convert-mentioned-text.html
 $dokka.location:com.getstream.sdk.chat.utils/StringUtility/getDeletedOrMentionedText/#io.getstream.chat.android.client.models.Message/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.utils/-string-utility/get-deleted-or-mentioned-text.html
 $dokka.location:com.getstream.sdk.chat.utils/StringUtility/isEmoji/#kotlin.String/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.utils/-string-utility/is-emoji.html
+$dokka.location:com.getstream.sdk.chat.view.activity////PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.activity/index.html
+$dokka.location:com.getstream.sdk.chat.view.activity/AttachmentActivity///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.activity/-attachment-activity/index.html
+$dokka.location:com.getstream.sdk.chat.view.activity/AttachmentActivity/AttachmentActivity/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.activity/-attachment-activity/-attachment-activity.html
+$dokka.location:com.getstream.sdk.chat.view.activity/AttachmentMediaActivity///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.activity/-attachment-media-activity/index.html
+$dokka.location:com.getstream.sdk.chat.view.activity/AttachmentMediaActivity/TYPE_KEY/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.activity/-attachment-media-activity/-t-y-p-e_-k-e-y.html
+$dokka.location:com.getstream.sdk.chat.view.activity/AttachmentMediaActivity/URL_KEY/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.activity/-attachment-media-activity/-u-r-l_-k-e-y.html
+$dokka.location:com.getstream.sdk.chat.view.activity/AttachmentMediaActivity/playVideo/#java.lang.String/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.activity/-attachment-media-activity/play-video.html
 $dokka.location:com.getstream.sdk.chat.view.channels////PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.channels/index.html
 $dokka.location:com.getstream.sdk.chat.view.channels/ChannelListView.ChannelClickListener///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.channels/-channel-list-view/-channel-click-listener/index.html
+$dokka.location:com.getstream.sdk.chat.view.channels/ChannelListView.ChannelClickListener/onClick/#io.getstream.chat.android.client.models.Channel/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.channels/-channel-list-view/-channel-click-listener/on-click.html
 $dokka.location:com.getstream.sdk.chat.view.channels/ChannelListView.EndReachedListener///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.channels/-channel-list-view/-end-reached-listener/index.html
+$dokka.location:com.getstream.sdk.chat.view.channels/ChannelListView.EndReachedListener/onEndReached/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.channels/-channel-list-view/-end-reached-listener/on-end-reached.html
 $dokka.location:com.getstream.sdk.chat.view.channels/ChannelListView.UserClickListener///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.channels/-channel-list-view/-user-click-listener/index.html
+$dokka.location:com.getstream.sdk.chat.view.channels/ChannelListView.UserClickListener/onUserClick/#io.getstream.chat.android.client.models.User/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.channels/-channel-list-view/-user-click-listener/on-user-click.html
 $dokka.location:com.getstream.sdk.chat.view.channels/ChannelListView///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.channels/-channel-list-view/index.html
 $dokka.location:com.getstream.sdk.chat.view.channels/ChannelListView/ChannelListView/#android.content.Context#android.util.AttributeSet#int/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.channels/-channel-list-view/-channel-list-view.html
 $dokka.location:com.getstream.sdk.chat.view.channels/ChannelListView/ChannelListView/#android.content.Context#android.util.AttributeSet/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.channels/-channel-list-view/-channel-list-view.html
@@ -275,13 +313,6 @@ $dokka.location:com.getstream.sdk.chat.view.messages/AvatarStyle/avatarBorderWid
 $dokka.location:com.getstream.sdk.chat.view.messages/AvatarStyle/avatarHeight/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.messages/-avatar-style/avatar-height.html
 $dokka.location:com.getstream.sdk.chat.view.messages/AvatarStyle/avatarInitialText/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.messages/-avatar-style/avatar-initial-text.html
 $dokka.location:com.getstream.sdk.chat.view.messages/AvatarStyle/avatarWidth/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.messages/-avatar-style/avatar-width.html
-$dokka.location:com.getstream.sdk.chat.view.messages/AvatarStyle/component1/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.messages/-avatar-style/component1.html
-$dokka.location:com.getstream.sdk.chat.view.messages/AvatarStyle/component2/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.messages/-avatar-style/component2.html
-$dokka.location:com.getstream.sdk.chat.view.messages/AvatarStyle/component3/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.messages/-avatar-style/component3.html
-$dokka.location:com.getstream.sdk.chat.view.messages/AvatarStyle/component4/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.messages/-avatar-style/component4.html
-$dokka.location:com.getstream.sdk.chat.view.messages/AvatarStyle/component5/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.messages/-avatar-style/component5.html
-$dokka.location:com.getstream.sdk.chat.view.messages/AvatarStyle/component6/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.messages/-avatar-style/component6.html
-$dokka.location:com.getstream.sdk.chat.view.messages/AvatarStyle/copy/#kotlin.Int#kotlin.Int#kotlin.Int#kotlin.Int#kotlin.Int#com.getstream.sdk.chat.style.TextStyle/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view.messages/-avatar-style/copy.html
 $dokka.location:com.getstream.sdk.chat.view////PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/index.html
 $dokka.location:com.getstream.sdk.chat.view//bindView/com.getstream.sdk.chat.viewmodel.messages.MessageListViewModel#com.getstream.sdk.chat.view.MessageListView#androidx.lifecycle.LifecycleOwner/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/bind-view.html
 $dokka.location:com.getstream.sdk.chat.view/ChannelHeaderView///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-channel-header-view/index.html
@@ -427,12 +458,6 @@ $dokka.location:com.getstream.sdk.chat.view/MessageListViewStyle/reactionViewEmo
 $dokka.location:com.getstream.sdk.chat.view/MessageListViewStyle/readStateStyle/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-message-list-view-style/read-state-style.html
 $dokka.location:com.getstream.sdk.chat.view/MessageListViewStyle/startThreadMessageActionEnabled/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-message-list-view-style/start-thread-message-action-enabled.html
 $dokka.location:com.getstream.sdk.chat.view/ReadStateStyle///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-read-state-style/index.html
-$dokka.location:com.getstream.sdk.chat.view/ReadStateStyle/component1/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-read-state-style/component1.html
-$dokka.location:com.getstream.sdk.chat.view/ReadStateStyle/component2/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-read-state-style/component2.html
-$dokka.location:com.getstream.sdk.chat.view/ReadStateStyle/component3/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-read-state-style/component3.html
-$dokka.location:com.getstream.sdk.chat.view/ReadStateStyle/component4/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-read-state-style/component4.html
-$dokka.location:com.getstream.sdk.chat.view/ReadStateStyle/component5/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-read-state-style/component5.html
-$dokka.location:com.getstream.sdk.chat.view/ReadStateStyle/copy/#com.getstream.sdk.chat.style.TextStyle#kotlin.Boolean#kotlin.Boolean#kotlin.Int#kotlin.Int/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-read-state-style/copy.html
 $dokka.location:com.getstream.sdk.chat.view/ReadStateStyle/isDeliveredIndicatorEnabled/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-read-state-style/is-delivered-indicator-enabled.html
 $dokka.location:com.getstream.sdk.chat.view/ReadStateStyle/isReadStateEnabled/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-read-state-style/is-read-state-enabled.html
 $dokka.location:com.getstream.sdk.chat.view/ReadStateStyle/readStateAvatarHeight/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.view/-read-state-style/read-state-avatar-height.html
@@ -451,9 +476,6 @@ $dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.Even
 $dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.Event///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-event/index.html
 $dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.PaginationState///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-pagination-state/index.html
 $dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.PaginationState/PaginationState/#kotlin.Boolean#kotlin.Boolean/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-pagination-state/-pagination-state.html
-$dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.PaginationState/component1/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-pagination-state/component1.html
-$dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.PaginationState/component2/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-pagination-state/component2.html
-$dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.PaginationState/copy/#kotlin.Boolean#kotlin.Boolean/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-pagination-state/copy.html
 $dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.PaginationState/endOfChannels/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-pagination-state/end-of-channels.html
 $dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.PaginationState/loadingMore/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-pagination-state/loading-more.html
 $dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.State.Loading///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-state/-loading/index.html
@@ -462,8 +484,6 @@ $dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.Stat
 $dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.State.Result///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-state/-result/index.html
 $dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.State.Result/Result/#kotlin.collections.List[io.getstream.chat.android.client.models.Channel]/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-state/-result/-result.html
 $dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.State.Result/channels/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-state/-result/channels.html
-$dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.State.Result/component1/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-state/-result/component1.html
-$dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.State.Result/copy/#kotlin.collections.List[io.getstream.chat.android.client.models.Channel]/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-state/-result/copy.html
 $dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel.State///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-state/index.html
 $dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/index.html
 $dokka.location:com.getstream.sdk.chat.viewmodel.channels/ChannelsViewModel/ChannelsViewModel/#io.getstream.chat.android.livedata.ChatDomain#io.getstream.chat.android.client.api.models.FilterObject#io.getstream.chat.android.client.api.models.QuerySort[io.getstream.chat.android.client.models.Channel]#kotlin.Int/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel.channels/-channels-view-model/-channels-view-model.html
@@ -490,8 +510,6 @@ $dokka.location:com.getstream.sdk.chat.viewmodel/ChannelHeaderViewModel/ChannelH
 $dokka.location:com.getstream.sdk.chat.viewmodel/CreateChannelViewModel.Event.ChannelNameSubmitted///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel/-create-channel-view-model/-event/-channel-name-submitted/index.html
 $dokka.location:com.getstream.sdk.chat.viewmodel/CreateChannelViewModel.Event.ChannelNameSubmitted/ChannelNameSubmitted/#kotlin.String/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel/-create-channel-view-model/-event/-channel-name-submitted/-channel-name-submitted.html
 $dokka.location:com.getstream.sdk.chat.viewmodel/CreateChannelViewModel.Event.ChannelNameSubmitted/channelName/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel/-create-channel-view-model/-event/-channel-name-submitted/channel-name.html
-$dokka.location:com.getstream.sdk.chat.viewmodel/CreateChannelViewModel.Event.ChannelNameSubmitted/component1/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel/-create-channel-view-model/-event/-channel-name-submitted/component1.html
-$dokka.location:com.getstream.sdk.chat.viewmodel/CreateChannelViewModel.Event.ChannelNameSubmitted/copy/#kotlin.String/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel/-create-channel-view-model/-event/-channel-name-submitted/copy.html
 $dokka.location:com.getstream.sdk.chat.viewmodel/CreateChannelViewModel.Event///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel/-create-channel-view-model/-event/index.html
 $dokka.location:com.getstream.sdk.chat.viewmodel/CreateChannelViewModel.State.BackendError///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel/-create-channel-view-model/-state/-backend-error/index.html
 $dokka.location:com.getstream.sdk.chat.viewmodel/CreateChannelViewModel.State.ChannelCreated///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel/-create-channel-view-model/-state/-channel-created/index.html
@@ -503,6 +521,56 @@ $dokka.location:com.getstream.sdk.chat.viewmodel/CreateChannelViewModel/CreateCh
 $dokka.location:com.getstream.sdk.chat.viewmodel/CreateChannelViewModel/onEvent/#com.getstream.sdk.chat.viewmodel.CreateChannelViewModel.Event/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel/-create-channel-view-model/on-event.html
 $dokka.location:com.getstream.sdk.chat.viewmodel/CreateChannelViewModel/state/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat.viewmodel/-create-channel-view-model/state.html
 $dokka.location:com.getstream.sdk.chat////PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/index.html
+$dokka.location:com.getstream.sdk.chat/Chat.Builder///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/-builder/index.html
+$dokka.location:com.getstream.sdk.chat/Chat.Builder/Builder/#kotlin.String#android.content.Context/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/-builder/-builder.html
+$dokka.location:com.getstream.sdk.chat/Chat.Builder/build/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/-builder/build.html
+$dokka.location:com.getstream.sdk.chat/Chat.Builder/chatLogLevel/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/-builder/chat-log-level.html
+$dokka.location:com.getstream.sdk.chat/Chat.Builder/chatLoggerHandler/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/-builder/chat-logger-handler.html
+$dokka.location:com.getstream.sdk.chat/Chat.Builder/fileUploader/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/-builder/file-uploader.html
+$dokka.location:com.getstream.sdk.chat/Chat.Builder/markdown/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/-builder/markdown.html
+$dokka.location:com.getstream.sdk.chat/Chat.Builder/navigationHandler/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/-builder/navigation-handler.html
+$dokka.location:com.getstream.sdk.chat/Chat.Builder/notificationHandler/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/-builder/notification-handler.html
+$dokka.location:com.getstream.sdk.chat/Chat.Builder/offlineEnabled/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/-builder/offline-enabled.html
+$dokka.location:com.getstream.sdk.chat/Chat.Builder/style/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/-builder/style.html
+$dokka.location:com.getstream.sdk.chat/Chat.Builder/urlSigner/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/-builder/url-signer.html
+$dokka.location:com.getstream.sdk.chat/Chat.Companion///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/-companion/index.html
+$dokka.location:com.getstream.sdk.chat/Chat.Companion/getInstance/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/-companion/get-instance.html
+$dokka.location:com.getstream.sdk.chat/Chat.Companion/instance/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/-companion/instance.html
+$dokka.location:com.getstream.sdk.chat/Chat///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/index.html
+$dokka.location:com.getstream.sdk.chat/Chat/currentUser/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/current-user.html
+$dokka.location:com.getstream.sdk.chat/Chat/disconnect/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/disconnect.html
+$dokka.location:com.getstream.sdk.chat/Chat/fonts/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/fonts.html
+$dokka.location:com.getstream.sdk.chat/Chat/markdown/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/markdown.html
+$dokka.location:com.getstream.sdk.chat/Chat/navigator/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/navigator.html
+$dokka.location:com.getstream.sdk.chat/Chat/onlineStatus/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/online-status.html
+$dokka.location:com.getstream.sdk.chat/Chat/setUser/#io.getstream.chat.android.client.models.User#kotlin.String#io.getstream.chat.android.client.socket.InitConnectionListener/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/set-user.html
+$dokka.location:com.getstream.sdk.chat/Chat/strings/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/strings.html
+$dokka.location:com.getstream.sdk.chat/Chat/unreadChannels/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/unread-channels.html
+$dokka.location:com.getstream.sdk.chat/Chat/unreadMessages/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/unread-messages.html
+$dokka.location:com.getstream.sdk.chat/Chat/urlSigner/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/url-signer.html
+$dokka.location:com.getstream.sdk.chat/Chat/version/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat/version.html
+$dokka.location:com.getstream.sdk.chat/ChatMarkdownImpl///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-markdown-impl/index.html
+$dokka.location:com.getstream.sdk.chat/ChatMarkdownImpl/ChatMarkdownImpl/#android.content.Context/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-markdown-impl/-chat-markdown-impl.html
+$dokka.location:com.getstream.sdk.chat/ChatMarkdownImpl/setText/#android.widget.TextView#kotlin.String/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-markdown-impl/set-text.html
+$dokka.location:com.getstream.sdk.chat/ChatUI.Builder///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/-builder/index.html
+$dokka.location:com.getstream.sdk.chat/ChatUI.Builder/Builder/#android.content.Context/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/-builder/-builder.html
+$dokka.location:com.getstream.sdk.chat/ChatUI.Builder/Builder/#io.getstream.chat.android.client.ChatClient#io.getstream.chat.android.livedata.ChatDomain#android.content.Context/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/-builder/-builder.html
+$dokka.location:com.getstream.sdk.chat/ChatUI.Builder/build/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/-builder/build.html
+$dokka.location:com.getstream.sdk.chat/ChatUI.Builder/withFonts/#com.getstream.sdk.chat.style.ChatFonts/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/-builder/with-fonts.html
+$dokka.location:com.getstream.sdk.chat/ChatUI.Builder/withMarkdown/#com.getstream.sdk.chat.ChatMarkdown/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/-builder/with-markdown.html
+$dokka.location:com.getstream.sdk.chat/ChatUI.Builder/withNavigationHandler/#com.getstream.sdk.chat.navigation.ChatNavigationHandler/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/-builder/with-navigation-handler.html
+$dokka.location:com.getstream.sdk.chat/ChatUI.Builder/withStrings/#com.getstream.sdk.chat.utils.strings.ChatStrings/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/-builder/with-strings.html
+$dokka.location:com.getstream.sdk.chat/ChatUI.Builder/withStyle/#com.getstream.sdk.chat.style.ChatStyle/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/-builder/with-style.html
+$dokka.location:com.getstream.sdk.chat/ChatUI.Builder/withUrlSigner/#com.getstream.sdk.chat.UrlSigner/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/-builder/with-url-signer.html
+$dokka.location:com.getstream.sdk.chat/ChatUI.Companion///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/-companion/index.html
+$dokka.location:com.getstream.sdk.chat/ChatUI.Companion/instance/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/-companion/instance.html
+$dokka.location:com.getstream.sdk.chat/ChatUI///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/index.html
+$dokka.location:com.getstream.sdk.chat/ChatUI/fonts/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/fonts.html
+$dokka.location:com.getstream.sdk.chat/ChatUI/markdown/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/markdown.html
+$dokka.location:com.getstream.sdk.chat/ChatUI/navigator/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/navigator.html
+$dokka.location:com.getstream.sdk.chat/ChatUI/strings/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/strings.html
+$dokka.location:com.getstream.sdk.chat/ChatUI/urlSigner/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/url-signer.html
+$dokka.location:com.getstream.sdk.chat/ChatUI/version/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-chat-u-i/version.html
 $dokka.location:com.getstream.sdk.chat/ConnectionLiveData.ConnectionModel///PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-connection-live-data/-connection-model/index.html
 $dokka.location:com.getstream.sdk.chat/ConnectionLiveData.ConnectionModel/ConnectionModel/#int#boolean/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-connection-live-data/-connection-model/-connection-model.html
 $dokka.location:com.getstream.sdk.chat/ConnectionLiveData.ConnectionModel/isConnected/#/PointingToDeclaration/stream-chat-android/com.getstream.sdk.chat/-connection-live-data/-connection-model/is-connected.html
@@ -515,9 +583,12 @@ com.getstream.sdk.chat
 com.getstream.sdk.chat.adapter
 com.getstream.sdk.chat.adapter.viewholder.attachment
 com.getstream.sdk.chat.adapter.viewholder.message
+com.getstream.sdk.chat.navigation.destinations
+com.getstream.sdk.chat.style
 com.getstream.sdk.chat.utils
 com.getstream.sdk.chat.utils.roundedImageView
 com.getstream.sdk.chat.view
+com.getstream.sdk.chat.view.activity
 com.getstream.sdk.chat.view.channels
 com.getstream.sdk.chat.view.dialog
 com.getstream.sdk.chat.view.messageinput
