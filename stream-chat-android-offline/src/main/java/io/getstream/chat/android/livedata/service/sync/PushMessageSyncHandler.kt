@@ -80,21 +80,30 @@ public class PushMessageSyncHandler(private val service: Service) {
 
         val cid: String = firebaseMessageParser.parse(message).let { "${it.channelType}:${it.channelId}" }
         if (ChatDomain.isInitialized && ChatClient.isInitialized) {
+
+            if ( ChatClient.instance().getCurrentUser() == null) {
+                val syncConfig = syncModule.encryptedBackgroundSyncConfigStore.get()
+                val user = User(id = syncConfig!!.userId)
+                val token = syncConfig!!.userToken
+
+                ChatClient.instance().setUserWithoutConnecting(user, token)
+            }
+
             logger.logD("Starting the sync")
             performSync(ChatDomain.instance(), cid, ChatClient.instance(), message)
         } else {
-            val syncConfig = syncModule.encryptedBackgroundSyncConfigStore.get()
-            syncConfig?.let {
-                val config = it
-                val user = User(id = config.userId)
-                val token = config.userToken
-                val client = initClient(service, user, token, config.apiKey)
-                val domain = initDomain(user, client)
-
-                logger.logD("Starting the sync, config: $syncConfig")
-
-                performSync(domain, cid, client, message)
-            }
+            // val syncConfig = syncModule.encryptedBackgroundSyncConfigStore.get()
+            // syncConfig?.let {
+            //     val config = it
+            //     val user = User(id = config.userId)
+            //     val token = config.userToken
+            //     val client = initClient(service, user, token, config.apiKey)
+            //     val domain = initDomain(user, client)
+            //
+            //     logger.logD("Starting the sync, config: $syncConfig")
+            //
+            //     performSync(domain, cid, client, message)
+            // }
         }
         service.stopForeground(true)
     }

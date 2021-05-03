@@ -105,6 +105,7 @@ public class ChatClient internal constructor(
             override fun stopped() = disconnectSocket()
         }
     )
+    private var connectCalled: Boolean = false
 
     public val disconnectListeners: MutableList<(User?) -> Unit> = mutableListOf()
     public val preSetUserListeners: MutableList<(User) -> Unit> = mutableListOf()
@@ -227,6 +228,7 @@ public class ChatClient internal constructor(
         }
         initializeClientWithUser(user, tokenProvider)
         connectionListener = listener
+        connectCalled = true
         socket.connect(user)
     }
 
@@ -405,6 +407,7 @@ public class ChatClient internal constructor(
     //endregion
 
     public fun disconnectSocket() {
+        connectCalled = false
         socket.disconnect()
     }
 
@@ -710,6 +713,10 @@ public class ChatClient internal constructor(
         }
     }
 
+    public fun isConnectCalled(): Boolean {
+        return connectCalled
+    }
+
     public fun disconnect() {
         // fire a handler here that the chatDomain and chatUI can use
         runCatching {
@@ -719,6 +726,7 @@ public class ChatClient internal constructor(
         }
         connectionListener = null
         clientStateService.onDisconnectRequested()
+        connectCalled = false
         socket.disconnect()
         lifecycleObserver.dispose()
     }

@@ -139,6 +139,7 @@ dependencies {
     implementation Dependencies.coil
     implementation Dependencies.coilGif
     implementation Dependencies.shimmer
+    implementation Dependencies.firebaseMessaging
 
     debugImplementation Dependencies.flipper
     debugImplementation Dependencies.flipperNetwork
