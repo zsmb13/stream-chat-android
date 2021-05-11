@@ -25,6 +25,7 @@ $dokka.location:io.getstream.chat.android.livedata.controller/ChannelController/
 $dokka.location:io.getstream.chat.android.livedata.controller/ChannelController/messages/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.controller/-channel-controller/messages.html
 $dokka.location:io.getstream.chat.android.livedata.controller/ChannelController/messagesState/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.controller/-channel-controller/messages-state.html
 $dokka.location:io.getstream.chat.android.livedata.controller/ChannelController/muted/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.controller/-channel-controller/muted.html
+$dokka.location:io.getstream.chat.android.livedata.controller/ChannelController/offlineChannelData/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.controller/-channel-controller/offline-channel-data.html
 $dokka.location:io.getstream.chat.android.livedata.controller/ChannelController/oldMessages/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.controller/-channel-controller/old-messages.html
 $dokka.location:io.getstream.chat.android.livedata.controller/ChannelController/read/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.controller/-channel-controller/read.html
 $dokka.location:io.getstream.chat.android.livedata.controller/ChannelController/reads/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.controller/-channel-controller/reads.html
@@ -59,8 +60,6 @@ $dokka.location:io.getstream.chat.android.livedata.controller/ThreadController/g
 $dokka.location:io.getstream.chat.android.livedata.controller/ThreadController/loadingOlderMessages/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.controller/-thread-controller/loading-older-messages.html
 $dokka.location:io.getstream.chat.android.livedata.controller/ThreadController/messages/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.controller/-thread-controller/messages.html
 $dokka.location:io.getstream.chat.android.livedata.controller/ThreadController/threadId/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.controller/-thread-controller/thread-id.html
-$dokka.location:io.getstream.chat.android.livedata.extensions////PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.extensions/index.html
-$dokka.location:io.getstream.chat.android.livedata.extensions//isPermanent/io.getstream.chat.android.client.errors.ChatError#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.extensions/is-permanent.html
 $dokka.location:io.getstream.chat.android.livedata.service.sync////PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.service.sync/index.html
 $dokka.location:io.getstream.chat.android.livedata.service.sync/PushMessageSyncHandler///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.service.sync/-push-message-sync-handler/index.html
 $dokka.location:io.getstream.chat.android.livedata.service.sync/PushMessageSyncHandler/PushMessageSyncHandler/#android.app.Service/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.service.sync/-push-message-sync-handler/-push-message-sync-handler.html
@@ -179,8 +178,6 @@ $dokka.location:io.getstream.chat.android.livedata.utils/EventObserver///Pointin
 $dokka.location:io.getstream.chat.android.livedata.utils/EventObserver/EventObserver/#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.utils/-event-observer/-event-observer.html
 $dokka.location:io.getstream.chat.android.livedata.utils/EventObserver/onChanged/#io.getstream.chat.android.livedata.utils.Event[TypeParam(bounds=[kotlin.Any?])]?/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.utils/-event-observer/on-changed.html
 $dokka.location:io.getstream.chat.android.livedata.utils/RetryPolicy///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.utils/-retry-policy/index.html
-$dokka.location:io.getstream.chat.android.livedata.utils/RetryPolicy/retryTimeout/#io.getstream.chat.android.client.ChatClient#kotlin.Int#io.getstream.chat.android.client.errors.ChatError/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.utils/-retry-policy/retry-timeout.html
-$dokka.location:io.getstream.chat.android.livedata.utils/RetryPolicy/shouldRetry/#io.getstream.chat.android.client.ChatClient#kotlin.Int#io.getstream.chat.android.client.errors.ChatError/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata.utils/-retry-policy/should-retry.html
 $dokka.location:io.getstream.chat.android.livedata////PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata/index.html
 $dokka.location:io.getstream.chat.android.livedata/ChannelData///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata/-channel-data/index.html
 $dokka.location:io.getstream.chat.android.livedata/ChannelData/ChannelData/#io.getstream.chat.android.client.models.Channel/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata/-channel-data/-channel-data.html
@@ -274,6 +271,13 @@ $dokka.location:io.getstream.chat.android.livedata/ChatDomain/user/#/PointingToD
 $dokka.location:io.getstream.chat.android.livedata/ChatDomain/userPresence/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata/-chat-domain/user-presence.html
 $dokka.location:io.getstream.chat.android.livedata/ChatDomain/watchChannel/#kotlin.String#kotlin.Int/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.livedata/-chat-domain/watch-channel.html
 $dokka.location:io.getstream.chat.android.offline.channel////PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/index.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelController.MessagesState.Loading///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-controller/-messages-state/-loading/index.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelController.MessagesState.NoQueryActive///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-controller/-messages-state/-no-query-active/index.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelController.MessagesState.OfflineNoResults///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-controller/-messages-state/-offline-no-results/index.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelController.MessagesState.Result///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-controller/-messages-state/-result/index.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelController.MessagesState.Result/Result/#kotlin.collections.List[io.getstream.chat.android.client.models.Message]/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-controller/-messages-state/-result/-result.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelController.MessagesState.Result/messages/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-controller/-messages-state/-result/messages.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelController.MessagesState///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-controller/-messages-state/index.html
 $dokka.location:io.getstream.chat.android.offline.channel/ChannelController///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-controller/index.html
 $dokka.location:io.getstream.chat.android.offline.channel/ChannelController/channelData/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-controller/channel-data.html
 $dokka.location:io.getstream.chat.android.offline.channel/ChannelController/channelId/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-controller/channel-id.html
@@ -301,7 +305,31 @@ $dokka.location:io.getstream.chat.android.offline.channel/ChannelController/typi
 $dokka.location:io.getstream.chat.android.offline.channel/ChannelController/unreadCount/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-controller/unread-count.html
 $dokka.location:io.getstream.chat.android.offline.channel/ChannelController/watcherCount/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-controller/watcher-count.html
 $dokka.location:io.getstream.chat.android.offline.channel/ChannelController/watchers/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-controller/watchers.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelData///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-data/index.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelData/ChannelData/#io.getstream.chat.android.client.models.Channel/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-data/-channel-data.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelData/ChannelData/#kotlin.String#kotlin.String#kotlin.String#io.getstream.chat.android.client.models.User#kotlin.Int#kotlin.Boolean#java.util.Date?#java.util.Date?#java.util.Date?#kotlin.Int#kotlin.String#kotlin.collections.MutableMap[kotlin.String,kotlin.Any]/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-data/-channel-data.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelData/channelId/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-data/channel-id.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelData/cid/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-data/cid.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelData/cooldown/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-data/cooldown.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelData/createdAt/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-data/created-at.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelData/createdBy/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-data/created-by.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelData/deletedAt/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-data/deleted-at.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelData/extraData/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-data/extra-data.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelData/frozen/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-data/frozen.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelData/memberCount/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-data/member-count.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelData/team/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-data/team.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelData/type/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-data/type.html
+$dokka.location:io.getstream.chat.android.offline.channel/ChannelData/updatedAt/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.channel/-channel-data/updated-at.html
+$dokka.location:io.getstream.chat.android.offline.extensions////PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.extensions/index.html
+$dokka.location:io.getstream.chat.android.offline.extensions//isPermanent/io.getstream.chat.android.client.errors.ChatError#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.extensions/is-permanent.html
 $dokka.location:io.getstream.chat.android.offline.querychannels////PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.querychannels/index.html
+$dokka.location:io.getstream.chat.android.offline.querychannels/QueryChannelsController.ChannelsState.Loading///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.querychannels/-query-channels-controller/-channels-state/-loading/index.html
+$dokka.location:io.getstream.chat.android.offline.querychannels/QueryChannelsController.ChannelsState.NoQueryActive///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.querychannels/-query-channels-controller/-channels-state/-no-query-active/index.html
+$dokka.location:io.getstream.chat.android.offline.querychannels/QueryChannelsController.ChannelsState.OfflineNoResults///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.querychannels/-query-channels-controller/-channels-state/-offline-no-results/index.html
+$dokka.location:io.getstream.chat.android.offline.querychannels/QueryChannelsController.ChannelsState.Result///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.querychannels/-query-channels-controller/-channels-state/-result/index.html
+$dokka.location:io.getstream.chat.android.offline.querychannels/QueryChannelsController.ChannelsState.Result/Result/#kotlin.collections.List[io.getstream.chat.android.client.models.Channel]/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.querychannels/-query-channels-controller/-channels-state/-result/-result.html
+$dokka.location:io.getstream.chat.android.offline.querychannels/QueryChannelsController.ChannelsState.Result/channels/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.querychannels/-query-channels-controller/-channels-state/-result/channels.html
+$dokka.location:io.getstream.chat.android.offline.querychannels/QueryChannelsController.ChannelsState///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.querychannels/-query-channels-controller/-channels-state/index.html
 $dokka.location:io.getstream.chat.android.offline.querychannels/QueryChannelsController///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.querychannels/-query-channels-controller/index.html
 $dokka.location:io.getstream.chat.android.offline.querychannels/QueryChannelsController/channels/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.querychannels/-query-channels-controller/channels.html
 $dokka.location:io.getstream.chat.android.offline.querychannels/QueryChannelsController/channelsState/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.querychannels/-query-channels-controller/channels-state.html
@@ -322,6 +350,15 @@ $dokka.location:io.getstream.chat.android.offline.thread/ThreadController/getMes
 $dokka.location:io.getstream.chat.android.offline.thread/ThreadController/loadingOlderMessages/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.thread/-thread-controller/loading-older-messages.html
 $dokka.location:io.getstream.chat.android.offline.thread/ThreadController/messages/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.thread/-thread-controller/messages.html
 $dokka.location:io.getstream.chat.android.offline.thread/ThreadController/threadId/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.thread/-thread-controller/thread-id.html
+$dokka.location:io.getstream.chat.android.offline.utils////PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.utils/index.html
+$dokka.location:io.getstream.chat.android.offline.utils/Event///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.utils/-event/index.html
+$dokka.location:io.getstream.chat.android.offline.utils/Event/Event/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.utils/-event/-event.html
+$dokka.location:io.getstream.chat.android.offline.utils/Event/getContentIfNotHandled/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.utils/-event/get-content-if-not-handled.html
+$dokka.location:io.getstream.chat.android.offline.utils/Event/hasBeenHandled/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.utils/-event/has-been-handled.html
+$dokka.location:io.getstream.chat.android.offline.utils/Event/peekContent/#/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.utils/-event/peek-content.html
+$dokka.location:io.getstream.chat.android.offline.utils/RetryPolicy///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.utils/-retry-policy/index.html
+$dokka.location:io.getstream.chat.android.offline.utils/RetryPolicy/retryTimeout/#io.getstream.chat.android.client.ChatClient#kotlin.Int#io.getstream.chat.android.client.errors.ChatError/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.utils/-retry-policy/retry-timeout.html
+$dokka.location:io.getstream.chat.android.offline.utils/RetryPolicy/shouldRetry/#io.getstream.chat.android.client.ChatClient#kotlin.Int#io.getstream.chat.android.client.errors.ChatError/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline.utils/-retry-policy/should-retry.html
 $dokka.location:io.getstream.chat.android.offline////PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline/index.html
 $dokka.location:io.getstream.chat.android.offline/ChatDomain.Builder///PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline/-chat-domain/-builder/index.html
 $dokka.location:io.getstream.chat.android.offline/ChatDomain.Builder/Builder/#android.content.Context#io.getstream.chat.android.client.ChatClient#io.getstream.chat.android.client.models.User?/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline/-chat-domain/-builder/-builder.html
@@ -400,12 +437,13 @@ $dokka.location:io.getstream.chat.android.offline/ChatDomain/userPresence/#/Poin
 $dokka.location:io.getstream.chat.android.offline/ChatDomain/watchChannel/#kotlin.String#kotlin.Int/PointingToDeclaration/stream-chat-android-offline/io.getstream.chat.android.offline/-chat-domain/watch-channel.html
 io.getstream.chat.android.livedata
 io.getstream.chat.android.livedata.controller
-io.getstream.chat.android.livedata.extensions
 io.getstream.chat.android.livedata.service.sync
 io.getstream.chat.android.livedata.usecase
 io.getstream.chat.android.livedata.utils
 io.getstream.chat.android.offline
 io.getstream.chat.android.offline.channel
+io.getstream.chat.android.offline.extensions
 io.getstream.chat.android.offline.querychannels
 io.getstream.chat.android.offline.thread
+io.getstream.chat.android.offline.utils
 
