@@ -760,7 +760,10 @@ internal class ChatDomainImpl internal constructor(
                 message.updatedAt != null || message.updatedLocallyAt != null -> {
                     client.updateMessage(message).execute()
                 }
-                else -> channelClient.sendMessage(message).execute()
+                else -> {
+                    // TODO: check if corresponding attachments are uploaded
+                    channelClient.sendMessage(message).execute()
+                }
             }
 
             if (result.isSuccess) {
