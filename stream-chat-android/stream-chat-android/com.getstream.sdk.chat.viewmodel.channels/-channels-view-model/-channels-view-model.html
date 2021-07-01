@@ -29,7 +29,7 @@
   <div>
     <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":stream-chat-android:dokkaHtmlPartial/release"><div class="symbol monospace">fun <a href="-channels-view-model.html">ChannelsViewModel</a>(chatDomain: <a href="../../../../stream-chat-android-offline/stream-chat-android-offline/io.getstream.chat.android.livedata/-chat-domain/index.html">ChatDomain</a> = ChatDomain.instance(), filter: <a href="../../../../stream-chat-android-client/stream-chat-android-client/io.getstream.chat.android.client.api.models/-filter-object/index.html">FilterObject</a> = Filters.and(
         Filters.eq("type", "messaging"),
-        Filters.`in`("members", listOf(chatDomain.currentUser.id)),
+        Filters.`in`("members", chatDomain.user.value?.id?.let(::listOf) ?: emptyList&lt;String&gt;()),
         Filters.or(Filters.notExists("draft"), Filters.ne("draft", true)),
     ), sort: <a href="../../../../stream-chat-android-client/stream-chat-android-client/io.getstream.chat.android.client.api.models/-query-sort/index.html">QuerySort</a>&lt;<a href="../../../../stream-chat-android-client/stream-chat-android-client/io.getstream.chat.android.client.models/-channel/index.html">Channel</a>&gt; = DEFAULT_SORT, limit: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a> = 30)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
   </div>
