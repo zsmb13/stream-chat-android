@@ -912,6 +912,8 @@ $dokka.location:io.getstream.chat.android.client.models/Config/automod/#/Pointin
 $dokka.location:io.getstream.chat.android.client.models/Config/automodBehavior/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/automod-behavior.html
 $dokka.location:io.getstream.chat.android.client.models/Config/blocklistBehavior/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/blocklist-behavior.html
 $dokka.location:io.getstream.chat.android.client.models/Config/commands/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/commands.html
+$dokka.location:io.getstream.chat.android.client.models/Config/connectEventsEnabled/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/connect-events-enabled.html
+$dokka.location:io.getstream.chat.android.client.models/Config/createdAt/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/created-at.html
 $dokka.location:io.getstream.chat.android.client.models/Config/created_at/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/created_at.html
 $dokka.location:io.getstream.chat.android.client.models/Config/customEventsEnabled/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/custom-events-enabled.html
 $dokka.location:io.getstream.chat.android.client.models/Config/isConnectEvents/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/is-connect-events.html
@@ -923,8 +925,13 @@ $dokka.location:io.getstream.chat.android.client.models/Config/isSearch/#/Pointi
 $dokka.location:io.getstream.chat.android.client.models/Config/isTypingEvents/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/is-typing-events.html
 $dokka.location:io.getstream.chat.android.client.models/Config/maxMessageLength/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/max-message-length.html
 $dokka.location:io.getstream.chat.android.client.models/Config/messageRetention/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/message-retention.html
+$dokka.location:io.getstream.chat.android.client.models/Config/mutesEnabled/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/mutes-enabled.html
 $dokka.location:io.getstream.chat.android.client.models/Config/name/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/name.html
 $dokka.location:io.getstream.chat.android.client.models/Config/pushNotificationsEnabled/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/push-notifications-enabled.html
+$dokka.location:io.getstream.chat.android.client.models/Config/readEventsEnabled/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/read-events-enabled.html
+$dokka.location:io.getstream.chat.android.client.models/Config/searchEnabled/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/search-enabled.html
+$dokka.location:io.getstream.chat.android.client.models/Config/typingEventsEnabled/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/typing-events-enabled.html
+$dokka.location:io.getstream.chat.android.client.models/Config/updatedAt/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/updated-at.html
 $dokka.location:io.getstream.chat.android.client.models/Config/updated_at/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/updated_at.html
 $dokka.location:io.getstream.chat.android.client.models/Config/uploadsEnabled/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/uploads-enabled.html
 $dokka.location:io.getstream.chat.android.client.models/Config/urlEnrichmentEnabled/#/PointingToDeclaration/stream-chat-android-client/io.getstream.chat.android.client.models/-config/url-enrichment-enabled.html
