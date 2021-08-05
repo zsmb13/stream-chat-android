@@ -24,6 +24,7 @@ $dokka.location:com.getstream.sdk.chat.adapter/MessageListItem.Position.TOP///Po
 $dokka.location:com.getstream.sdk.chat.adapter/MessageListItem.Position.TOP/name/#/PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat.adapter/-message-list-item/-position/-t-o-p/name.html
 $dokka.location:com.getstream.sdk.chat.adapter/MessageListItem.Position.TOP/ordinal/#/PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat.adapter/-message-list-item/-position/-t-o-p/ordinal.html
 $dokka.location:com.getstream.sdk.chat.adapter/MessageListItem.Position///PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat.adapter/-message-list-item/-position/index.html
+$dokka.location:com.getstream.sdk.chat.adapter/MessageListItem.ThreadPlaceholderItem///PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat.adapter/-message-list-item/-thread-placeholder-item/index.html
 $dokka.location:com.getstream.sdk.chat.adapter/MessageListItem.ThreadSeparatorItem///PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat.adapter/-message-list-item/-thread-separator-item/index.html
 $dokka.location:com.getstream.sdk.chat.adapter/MessageListItem.ThreadSeparatorItem/ThreadSeparatorItem/#java.util.Date#kotlin.Int/PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat.adapter/-message-list-item/-thread-separator-item/-thread-separator-item.html
 $dokka.location:com.getstream.sdk.chat.adapter/MessageListItem.ThreadSeparatorItem/date/#/PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat.adapter/-message-list-item/-thread-separator-item/date.html
@@ -416,12 +417,6 @@ $dokka.location:com.getstream.sdk.chat/StreamFileProvider///PointingToDeclaratio
 $dokka.location:com.getstream.sdk.chat/StreamFileUtil///PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat/-stream-file-util/index.html
 $dokka.location:com.getstream.sdk.chat/StreamFileUtil/getUriForFile/#android.content.Context#java.io.File/PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat/-stream-file-util/get-uri-for-file.html
 $dokka.location:com.getstream.sdk.chat/StreamFileUtil/writeImageToSharableFile/#android.content.Context#android.graphics.Bitmap/PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat/-stream-file-util/write-image-to-sharable-file.html
-$dokka.location:com.getstream.sdk.chat/UrlSigner.DefaultUrlSigner///PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat/-url-signer/-default-url-signer/index.html
-$dokka.location:com.getstream.sdk.chat/UrlSigner.DefaultUrlSigner/signFileUrl/#java.lang.String/PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat/-url-signer/-default-url-signer/sign-file-url.html
-$dokka.location:com.getstream.sdk.chat/UrlSigner.DefaultUrlSigner/signImageUrl/#java.lang.String/PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat/-url-signer/-default-url-signer/sign-image-url.html
-$dokka.location:com.getstream.sdk.chat/UrlSigner///PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat/-url-signer/index.html
-$dokka.location:com.getstream.sdk.chat/UrlSigner/signFileUrl/#java.lang.String/PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat/-url-signer/sign-file-url.html
-$dokka.location:com.getstream.sdk.chat/UrlSigner/signImageUrl/#java.lang.String/PointingToDeclaration/stream-chat-android-ui-common/com.getstream.sdk.chat/-url-signer/sign-image-url.html
 com.getstream.sdk.chat
 com.getstream.sdk.chat.adapter
 com.getstream.sdk.chat.coil
