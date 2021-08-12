@@ -1,0 +1,9 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:io.getstream.chat.android.pushprovider.firebase////PointingToDeclaration/stream-chat-android-pushprovider-firebase/io.getstream.chat.android.pushprovider.firebase/index.html
+$dokka.location:io.getstream.chat.android.pushprovider.firebase/FirebasePushDeviceGenerator///PointingToDeclaration/stream-chat-android-pushprovider-firebase/io.getstream.chat.android.pushprovider.firebase/-firebase-push-device-generator/index.html
+$dokka.location:io.getstream.chat.android.pushprovider.firebase/FirebasePushDeviceGenerator/FirebasePushDeviceGenerator/#com.google.firebase.messaging.FirebaseMessaging/PointingToDeclaration/stream-chat-android-pushprovider-firebase/io.getstream.chat.android.pushprovider.firebase/-firebase-push-device-generator/-firebase-push-device-generator.html
+$dokka.location:io.getstream.chat.android.pushprovider.firebase/FirebasePushDeviceGenerator/asyncGenerateDevice/#kotlin.Function1[io.getstream.chat.android.client.models.Device,kotlin.Unit]/PointingToDeclaration/stream-chat-android-pushprovider-firebase/io.getstream.chat.android.pushprovider.firebase/-firebase-push-device-generator/async-generate-device.html
+$dokka.location:io.getstream.chat.android.pushprovider.firebase/FirebasePushDeviceGenerator/isValidForThisDevice/#android.content.Context/PointingToDeclaration/stream-chat-android-pushprovider-firebase/io.getstream.chat.android.pushprovider.firebase/-firebase-push-device-generator/is-valid-for-this-device.html
+io.getstream.chat.android.pushprovider.firebase
+
