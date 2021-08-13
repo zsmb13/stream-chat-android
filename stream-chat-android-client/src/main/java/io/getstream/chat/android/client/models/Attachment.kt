@@ -41,6 +41,9 @@ public data class Attachment(
     @SerializedName("fallback")
     var fallback: String? = null,
 
+    @SerializedName("actions")
+    var actions: List<AttachmentAction>? = null,
+
     @IgnoreSerialisation
     @IgnoreDeserialisation
     var upload: File? = null,
