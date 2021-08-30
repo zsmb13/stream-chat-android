@@ -88,6 +88,7 @@ io.getstream.chat.android.livedata.utils
 io.getstream.chat.android.offline
 io.getstream.chat.android.offline.channel
 io.getstream.chat.android.offline.extensions
+io.getstream.chat.android.offline.message.attachment
 io.getstream.chat.android.offline.querychannels
 io.getstream.chat.android.offline.thread
 io.getstream.chat.android.offline.utils
