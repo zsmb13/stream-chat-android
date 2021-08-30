@@ -9,6 +9,8 @@ import android.widget.TextView
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import io.getstream.chat.android.client.ChatClient
+import io.getstream.chat.android.client.channel.ChannelClient
 import io.getstream.chat.android.client.models.Member
 import io.getstream.chat.android.client.models.name
 import io.getstream.chat.android.ui.R
@@ -109,7 +111,9 @@ internal class ChannelActionsDialogFragment : BottomSheetDialogFragment() {
             if (style.deleteConversationEnabled) {
                 configureActionItem(style.warningItemTextStyle, style.deleteConversationIcon)
                 setOnClickListener {
-                    channelActionListener?.onDeleteConversationClicked(cid)
+                    // channelActionListener?.onDeleteConversationClicked(cid)
+
+                    ChatClient.instance().channel(cid).unmute().enqueue()
                     dismiss()
                 }
             } else {

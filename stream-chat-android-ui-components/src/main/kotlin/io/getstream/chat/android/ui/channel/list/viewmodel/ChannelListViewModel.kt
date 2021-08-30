@@ -10,7 +10,6 @@ import com.getstream.sdk.chat.utils.extensions.defaultChannelListFilter
 import io.getstream.chat.android.client.ChatClient
 import io.getstream.chat.android.client.api.models.FilterObject
 import io.getstream.chat.android.client.api.models.QuerySort
-import io.getstream.chat.android.client.call.await
 import io.getstream.chat.android.client.call.enqueue
 import io.getstream.chat.android.client.errors.ChatError
 import io.getstream.chat.android.client.models.Channel
@@ -21,10 +20,10 @@ import io.getstream.chat.android.core.internal.exhaustive
 import io.getstream.chat.android.livedata.utils.Event
 import io.getstream.chat.android.offline.ChatDomain
 import io.getstream.chat.android.offline.querychannels.QueryChannelsController
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.flatMapConcat
 import kotlinx.coroutines.flow.map
+import java.util.Date
 
 /**
  * ViewModel class for [io.getstream.chat.android.ui.channel.list.ChannelListView].
@@ -81,10 +80,14 @@ public class ChannelListViewModel(
 
                 stateMerger.addSource(channelState) { state -> stateMerger.value = state }
 
-                stateMerger.addSource(queryChannelsController.mutedChannelIds.asLiveData()) {
+                stateMerger.addSource(queryChannelsController.mutedChannelIds.asLiveData()) { mutedChannels ->
                     val state = stateMerger.value
 
                     if (state?.channels?.isNotEmpty() == true) {
+                        state.channels.forEach { channel ->
+                                channel.updatedAt = Date()
+                            }
+
                         stateMerger.value = state.copy(channels = state.channels)
                     } else {
                         stateMerger.value = state?.copy()
