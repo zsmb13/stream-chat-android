@@ -7,8 +7,10 @@ import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import com.getstream.sdk.chat.utils.extensions.defaultChannelListFilter
+import io.getstream.chat.android.client.ChatClient
 import io.getstream.chat.android.client.api.models.FilterObject
 import io.getstream.chat.android.client.api.models.QuerySort
+import io.getstream.chat.android.client.call.await
 import io.getstream.chat.android.client.call.enqueue
 import io.getstream.chat.android.client.errors.ChatError
 import io.getstream.chat.android.client.models.Channel
@@ -19,6 +21,7 @@ import io.getstream.chat.android.core.internal.exhaustive
 import io.getstream.chat.android.livedata.utils.Event
 import io.getstream.chat.android.offline.ChatDomain
 import io.getstream.chat.android.offline.querychannels.QueryChannelsController
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.flatMapConcat
 import kotlinx.coroutines.flow.map
@@ -78,7 +81,7 @@ public class ChannelListViewModel(
 
                 stateMerger.addSource(channelState) { state -> stateMerger.value = state }
 
-                stateMerger.addSource(queryChannelsController.mutedChannelIds.asLiveData()) { mutedChannels ->
+                stateMerger.addSource(queryChannelsController.mutedChannelIds.asLiveData()) {
                     val state = stateMerger.value
 
                     if (state?.channels?.isNotEmpty() == true) {
@@ -131,9 +134,10 @@ public class ChannelListViewModel(
     }
 
     public fun deleteChannel(channel: Channel) {
-        chatDomain.deleteChannel(channel.cid).enqueue(
-            onError = { _errorEvents.postValue(Event(ErrorEvent.DeleteChannelError(it))) }
-        )
+        ChatClient.instance().channel(channel.cid).mute().enqueue()
+        // chatDomain.deleteChannel(channel.cid).enqueue(
+        //     onError = { _errorEvents.postValue(Event(ErrorEvent.DeleteChannelError(it))) }
+        // )
     }
 
     public fun hideChannel(channel: Channel) {
