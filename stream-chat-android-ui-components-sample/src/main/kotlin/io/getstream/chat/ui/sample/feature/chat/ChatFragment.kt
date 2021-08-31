@@ -1,6 +1,8 @@
 package io.getstream.chat.ui.sample.feature.chat
 
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -68,6 +70,9 @@ class ChatFragment : Fragment() {
         binding.messageListView.setDeletedMessageListItemPredicate(DeletedMessageListItemPredicate.VisibleToAuthorOnly)
         initChatViewModel()
         initMessagesViewModel()
+
+        Handler(Looper.myLooper()!!).postDelayed(::initMessagesViewModel, 6000)
+
         configureMessageInputView()
         initMessageInputViewModel()
         configureBackButtonHandling()
@@ -166,6 +171,7 @@ class ChatFragment : Fragment() {
 
     private fun initMessagesViewModel() {
         val calendar = Calendar.getInstance()
+
         messageListViewModel.apply {
             bindView(binding.messageListView, viewLifecycleOwner)
             setDateSeparatorHandler { previousMessage, message ->
