@@ -87,13 +87,13 @@ public class QueryChannelsController internal constructor(
     private val _endOfChannels = MutableStateFlow(false)
     private val _sortedChannels = _channels.map { it.values.sortedWith(sort.comparator) }
         .stateIn(domainImpl.scope, SharingStarted.Eagerly, emptyList())
-    private val _mutedChannelIds = MutableStateFlow<List<String>>(emptyList())
+    private val _mutedChannelIds = MutableStateFlow<List<Channel>>(emptyList())
 
     public val loading: StateFlow<Boolean> = _loading
     public val loadingMore: StateFlow<Boolean> = _loadingMore
     public val endOfChannels: StateFlow<Boolean> = _endOfChannels
     public val channels: StateFlow<List<Channel>> = _sortedChannels
-    public val mutedChannelIds: StateFlow<List<String>> = _mutedChannelIds
+    public val mutedChannelIds: StateFlow<List<Channel>> = _mutedChannelIds
 
     public val channelsState: StateFlow<ChannelsState> =
         _loading.combine(_sortedChannels) { loading: Boolean, channels: List<Channel> ->
@@ -149,7 +149,7 @@ public class QueryChannelsController internal constructor(
         }
 
         if (event is NotificationChannelMutesUpdatedEvent) {
-            _mutedChannelIds.value = event.me.channelMutes.toChannelsId()
+            _mutedChannelIds.value = event.me.channelMutes.toChannels()
         }
 
         if (event is CidEvent) {
@@ -360,7 +360,7 @@ public class QueryChannelsController internal constructor(
         }
     }
 
-    private fun List<ChannelMute>.toChannelsId() = map { channelMute -> channelMute.channel.id }
+    private fun List<ChannelMute>.toChannels() = map { channelMute -> channelMute.channel }
 
     public sealed class ChannelsState {
         /** The QueryChannelsController is initialized but no query is currently running.

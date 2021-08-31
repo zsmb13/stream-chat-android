@@ -23,7 +23,7 @@ import io.getstream.chat.android.offline.querychannels.QueryChannelsController
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.flatMapConcat
 import kotlinx.coroutines.flow.map
-import java.util.Date
+
 
 /**
  * ViewModel class for [io.getstream.chat.android.ui.channel.list.ChannelListView].
@@ -84,10 +84,6 @@ public class ChannelListViewModel(
                     val state = stateMerger.value
 
                     if (state?.channels?.isNotEmpty() == true) {
-                        state.channels.forEach { channel ->
-                                channel.updatedAt = Date()
-                            }
-
                         stateMerger.value = state.copy(channels = state.channels)
                     } else {
                         stateMerger.value = state?.copy()
