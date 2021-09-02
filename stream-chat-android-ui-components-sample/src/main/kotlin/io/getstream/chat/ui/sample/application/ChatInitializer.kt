@@ -20,12 +20,11 @@ class ChatInitializer(private val context: Context) {
                 shouldGroupNotifications = true,
                 pushDeviceGenerators = listOf(FirebasePushDeviceGenerator()),
             )
-        val notificationHandler = SampleNotificationHandler(context, notificationConfig)
         val logLevel = if (BuildConfig.DEBUG) ChatLogLevel.ALL else ChatLogLevel.NOTHING
 
         val client = ChatClient.Builder(apiKey, context)
+            .notifications(NoActionsChatNotificationHandler(context, NotificationConfig()))
             .loggerHandler(FirebaseLogger)
-            .notifications(notificationHandler)
             .logLevel(logLevel)
             .build()
 
