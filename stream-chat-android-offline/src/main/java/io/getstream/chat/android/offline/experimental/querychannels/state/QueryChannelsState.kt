@@ -20,5 +20,5 @@ public interface QueryChannelsState {
     public val endOfChannels: StateFlow<Boolean>
     public val channels: StateFlow<List<Channel>>
     public val mutedChannelIds: StateFlow<List<String>>
-    public val channelsState: StateFlow<ChannelsState>
+    public val channelsStateData: StateFlow<ChannelsStateData>
 }
