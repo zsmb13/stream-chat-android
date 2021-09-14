@@ -212,9 +212,8 @@ public final class io/getstream/chat/android/client/api/models/AndFilterObject :
 
 public final class io/getstream/chat/android/client/api/models/AutocompleteFilterObject : io/getstream/chat/android/client/api/models/FilterObject {
 	public final fun component1 ()Ljava/lang/String;
-	public final fun component2 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lio/getstream/chat/android/client/api/models/AutocompleteFilterObject;
-	public static synthetic fun copy$default (Lio/getstream/chat/android/client/api/models/AutocompleteFilterObject;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/getstream/chat/android/client/api/models/AutocompleteFilterObject;
+	public final fun copy (Ljava/lang/String;)Lio/getstream/chat/android/client/api/models/AutocompleteFilterObject;
+	public static synthetic fun copy$default (Lio/getstream/chat/android/client/api/models/AutocompleteFilterObject;Ljava/lang/String;ILjava/lang/Object;)Lio/getstream/chat/android/client/api/models/AutocompleteFilterObject;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getFieldName ()Ljava/lang/String;
 	public final fun getValue ()Ljava/lang/String;
