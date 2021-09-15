@@ -28,6 +28,7 @@ io.getstream.chat.android.client.clientstate
 io.getstream.chat.android.client.di
 io.getstream.chat.android.client.errors
 io.getstream.chat.android.client.events
+io.getstream.chat.android.client.experimental.plugin.listeners
 io.getstream.chat.android.client.extensions
 io.getstream.chat.android.client.header
 io.getstream.chat.android.client.helpers
@@ -35,12 +36,13 @@ io.getstream.chat.android.client.logger
 io.getstream.chat.android.client.models
 io.getstream.chat.android.client.notifications
 io.getstream.chat.android.client.notifications.handler
-io.getstream.chat.android.client.parser
 io.getstream.chat.android.client.parser2.adapters
 io.getstream.chat.android.client.socket
 io.getstream.chat.android.client.token
 io.getstream.chat.android.client.uploader
 io.getstream.chat.android.client.utils
+io.getstream.chat.android.client.utils.internal.toggle
+io.getstream.chat.android.client.utils.internal.toggle.dialog
 io.getstream.chat.android.client.utils.observable
 module:stream-chat-android-compose
 io.getstream.chat.android.compose.handlers
@@ -52,7 +54,8 @@ io.getstream.chat.android.compose.state.messages.items
 io.getstream.chat.android.compose.state.messages.list
 io.getstream.chat.android.compose.state.messages.reaction
 io.getstream.chat.android.compose.ui.attachments
-io.getstream.chat.android.compose.ui.attachments.components
+io.getstream.chat.android.compose.ui.attachments.content
+io.getstream.chat.android.compose.ui.attachments.factory
 io.getstream.chat.android.compose.ui.channel
 io.getstream.chat.android.compose.ui.channel.header
 io.getstream.chat.android.compose.ui.channel.info
@@ -137,6 +140,8 @@ io.getstream.chat.android.ui.mention.list.viewmodel
 io.getstream.chat.android.ui.message
 io.getstream.chat.android.ui.message.input
 io.getstream.chat.android.ui.message.input.attachment
+io.getstream.chat.android.ui.message.input.mention
+io.getstream.chat.android.ui.message.input.transliteration
 io.getstream.chat.android.ui.message.input.viewmodel
 io.getstream.chat.android.ui.message.list
 io.getstream.chat.android.ui.message.list.adapter
