@@ -5,6 +5,7 @@ import io.getstream.chat.android.client.api.QueryParams
 import io.getstream.chat.android.client.api2.model.requests.MessageRequest
 import io.getstream.chat.android.client.api2.model.requests.PartialUpdateMessageRequest
 import io.getstream.chat.android.client.api2.model.requests.ReactionRequest
+import io.getstream.chat.android.client.api2.model.requests.RunActionRequest
 import io.getstream.chat.android.client.api2.model.requests.SendActionRequest
 import io.getstream.chat.android.client.api2.model.response.MessageResponse
 import io.getstream.chat.android.client.api2.model.response.MessagesResponse
@@ -108,4 +109,10 @@ internal interface MessageApi {
         @Query("limit") limit: Int,
         @Query("id_lt") firstId: String,
     ): RetrofitCall<MessagesResponse>
+
+    @POST("/messages/{id}/action")
+    fun runMessageAction(
+        @Path("id") messageId: String,
+        @Body runActionRequest: RunActionRequest
+    ): RetrofitCall<Unit>
 }
