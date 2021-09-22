@@ -21,6 +21,7 @@ internal fun Attachment.toDto(): AttachmentDto =
         author_link = authorLink,
         type = type,
         url = url,
+        actions = actions?.map { attachment -> attachment.toDto() },
         extraData = extraData,
     )
 
@@ -42,5 +43,6 @@ internal fun AttachmentDto.toDomain(): Attachment =
         titleLink = title_link,
         type = type,
         url = url,
+        actions = actions?.map { attachment -> attachment.toDomain() },
         extraData = extraData.toMutableMap(),
     )

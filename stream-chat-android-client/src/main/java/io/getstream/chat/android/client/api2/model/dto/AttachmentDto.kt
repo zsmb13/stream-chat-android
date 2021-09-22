@@ -24,6 +24,7 @@ internal data class AttachmentDto(
     val title_link: String?,
     val type: String?,
     val url: String?,
+    val actions: List<MessageActionDto>?,
 
     val extraData: Map<String, Any>,
 ) : ExtraDataDto
