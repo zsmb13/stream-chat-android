@@ -1600,6 +1600,10 @@ public final class io/getstream/chat/android/ui/message/list/MessageListView : a
 	public final fun showLoadingView ()V
 }
 
+public abstract interface class io/getstream/chat/android/ui/message/list/MessageListView$AttachmentActionListener {
+	public abstract fun onAttachmentActionClick (Lio/getstream/chat/android/client/models/AttachmentAction;)V
+}
+
 public abstract interface class io/getstream/chat/android/ui/message/list/MessageListView$AttachmentClickListener {
 	public abstract fun onAttachmentClick (Lio/getstream/chat/android/client/models/Message;Lio/getstream/chat/android/client/models/Attachment;)V
 }
@@ -1963,6 +1967,7 @@ public final class io/getstream/chat/android/ui/message/list/adapter/MessageList
 }
 
 public abstract interface class io/getstream/chat/android/ui/message/list/adapter/MessageListListenerContainer {
+	public abstract fun getAttachmentActionListener ()Lio/getstream/chat/android/ui/message/list/MessageListView$AttachmentActionListener;
 	public abstract fun getAttachmentClickListener ()Lio/getstream/chat/android/ui/message/list/MessageListView$AttachmentClickListener;
 	public abstract fun getAttachmentDownloadClickListener ()Lio/getstream/chat/android/ui/message/list/MessageListView$AttachmentDownloadClickListener;
 	public abstract fun getGiphySendListener ()Lio/getstream/chat/android/ui/message/list/MessageListView$GiphySendListener;
