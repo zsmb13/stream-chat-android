@@ -410,6 +410,10 @@ public class MessageListView : ConstraintLayout {
         // Empty
     }
 
+    private val DEFAULT_ATTACHMENT_ACTION_LISTENER = AttachmentActionListener {
+        Toast.makeText(context, "Ha!", Toast.LENGTH_SHORT).show()
+    }
+
     private val listenerContainer = MessageListListenerContainerImpl(
         messageClickListener = DEFAULT_MESSAGE_CLICK_LISTENER,
         messageLongClickListener = DEFAULT_MESSAGE_LONG_CLICK_LISTENER,
@@ -421,6 +425,7 @@ public class MessageListView : ConstraintLayout {
         userClickListener = DEFAULT_USER_CLICK_LISTENER,
         giphySendListener = DEFAULT_GIPHY_SEND_LISTENER,
         linkClickListener = DEFAULT_LINK_CLICK_LISTENER,
+        attachmentActionListener = DEFAULT_ATTACHMENT_ACTION_LISTENER,
     )
     private var enterThreadListener = DEFAULT_ENTER_THREAD_LISTENER
 
@@ -1293,7 +1298,6 @@ public class MessageListView : ConstraintLayout {
     public fun setAttachmentDeleteOptionClickHandler(handler: AttachmentGalleryActivity.AttachmentDeleteOptionHandler) {
         this._attachmentDeleteOptionHandler = handler
     }
-
 
     /**
      * Sets the handler used when handling the errors defined in [MessageListViewModel.ErrorEvent].

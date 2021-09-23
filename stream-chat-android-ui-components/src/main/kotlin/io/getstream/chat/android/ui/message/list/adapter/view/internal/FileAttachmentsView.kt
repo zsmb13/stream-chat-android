@@ -44,7 +44,7 @@ internal class FileAttachmentsView : RecyclerView {
     var attachmentClickListener: AttachmentClickListener? = null
     var attachmentLongClickListener: AttachmentLongClickListener? = null
     var attachmentDownloadClickListener: AttachmentDownloadClickListener? = null
-    var actionClickListener: AttachmentActionClickListener = AttachmentActionClickListener {  }
+    var attachmentActionClickListener: AttachmentActionClickListener = AttachmentActionClickListener { }
 
     private lateinit var style: FileAttachmentViewStyle
 
@@ -69,17 +69,18 @@ internal class FileAttachmentsView : RecyclerView {
 
     private fun init(attrs: AttributeSet?) {
         style = FileAttachmentViewStyle(context, attrs)
+    }
+
+    fun setAttachments(attachments: List<Attachment>) {
         fileAttachmentsAdapter = FileAttachmentsAdapter(
             attachmentClickListener = { attachmentClickListener?.onAttachmentClick(it) },
             attachmentLongClickListener = { attachmentLongClickListener?.onAttachmentLongClick() },
             attachmentDownloadClickListener = { attachmentDownloadClickListener?.onAttachmentDownloadClick(it) },
-            actionClickListener = actionClickListener::onAttachmentActionClick,
+            attachmentActionClickListener = attachmentActionClickListener::onAttachmentActionClick,
             style,
         )
         adapter = fileAttachmentsAdapter
-    }
 
-    fun setAttachments(attachments: List<Attachment>) {
         fileAttachmentsAdapter.setItems(attachments)
     }
 
@@ -103,7 +104,7 @@ private class FileAttachmentsAdapter(
     private val attachmentClickListener: AttachmentClickListener,
     private val attachmentLongClickListener: AttachmentLongClickListener,
     private val attachmentDownloadClickListener: AttachmentDownloadClickListener,
-    private val actionClickListener: (AttachmentAction) -> Unit,
+    private val attachmentActionClickListener: (AttachmentAction) -> Unit,
     private val style: FileAttachmentViewStyle,
 ) : SimpleListAdapter<Attachment, FileAttachmentViewHolder>() {
 
@@ -116,7 +117,7 @@ private class FileAttachmentsAdapter(
                     attachmentClickListener,
                     attachmentLongClickListener,
                     attachmentDownloadClickListener,
-                    actionClickListener,
+                    attachmentActionClickListener,
                     style,
                 )
             }
@@ -143,11 +144,11 @@ private class FileAttachmentViewHolder(
     private val attachmentClickListener: AttachmentClickListener,
     private val attachmentLongClickListener: AttachmentLongClickListener,
     private val attachmentDownloadClickListener: AttachmentDownloadClickListener,
-    private val actionClickListener: (AttachmentAction) -> Unit,
+    private val attachmentActionClickListener: (AttachmentAction) -> Unit,
     private val style: FileAttachmentViewStyle,
 
     ) : SimpleListAdapter.ViewHolder<Attachment>(binding.root) {
-    private val attachmentActionsAdapter: AttachmentActionsAdapter = AttachmentActionsAdapter(actionClickListener)
+    private val attachmentActionsAdapter: AttachmentActionsAdapter = AttachmentActionsAdapter(attachmentActionClickListener)
     private var attachment: Attachment? = null
 
     private var scope: CoroutineScope? = null
@@ -237,7 +238,9 @@ private class FileAttachmentViewHolder(
             binding.progressBar.indeterminateDrawable = style.progressBarDrawable
             binding.progressBar.isVisible = item.uploadState is Attachment.UploadState.InProgress
 
-            attachmentActionsAdapter.setItems(listOf(AttachmentAction(), AttachmentAction(), AttachmentAction()))
+            attachmentActionsAdapter.setItems(listOf(
+                AttachmentAction(text = "Option"), AttachmentAction(text = "Option"), AttachmentAction(text = "Option"))
+            )
 
             subscribeForProgressIfNeeded(item)
             setupBackground()

@@ -14,7 +14,7 @@ internal class AttachmentActionsAdapter(
         return StreamUiItemAttachmentActionBinding
             .inflate(parent.streamThemeInflater, parent, false)
             .let {
-                AttachmentActionViewHolder(it)
+                AttachmentActionViewHolder(it, actionClickListener)
             }
     }
 }

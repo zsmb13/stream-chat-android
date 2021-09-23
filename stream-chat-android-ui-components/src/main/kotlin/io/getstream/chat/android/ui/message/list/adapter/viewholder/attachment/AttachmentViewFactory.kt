@@ -13,6 +13,7 @@ import io.getstream.chat.android.ui.common.extensions.internal.hasLink
 import io.getstream.chat.android.ui.common.extensions.internal.isMedia
 import io.getstream.chat.android.ui.message.list.MessageListItemStyle
 import io.getstream.chat.android.ui.message.list.adapter.MessageListListenerContainer
+import io.getstream.chat.android.ui.message.list.adapter.view.internal.AttachmentActionClickListener
 import io.getstream.chat.android.ui.message.list.adapter.view.internal.AttachmentClickListener
 import io.getstream.chat.android.ui.message.list.adapter.view.internal.AttachmentDownloadClickListener
 import io.getstream.chat.android.ui.message.list.adapter.view.internal.AttachmentLongClickListener
@@ -194,6 +195,9 @@ public open class AttachmentViewFactory {
         attachmentDownloadClickListener = AttachmentDownloadClickListener {
             listeners.attachmentDownloadClickListener.onAttachmentDownloadClick(it)
         }
+        attachmentActionClickListener =
+            AttachmentActionClickListener(listeners.attachmentActionListener::onAttachmentActionClick)
+
         setAttachments(attachments)
     }
 
