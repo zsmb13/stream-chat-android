@@ -3,12 +3,14 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="?selectableItemBackground"
     >
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="lalala"
+        android:padding="4dp"
         />
 
 </FrameLayout>

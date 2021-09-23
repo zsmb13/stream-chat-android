@@ -19,6 +19,7 @@ import com.google.android.material.shape.MaterialShapeDrawable
 import com.google.android.material.shape.ShapeAppearanceModel
 import io.getstream.chat.android.client.extensions.uploadId
 import io.getstream.chat.android.client.models.Attachment
+import io.getstream.chat.android.client.models.AttachmentAction
 import io.getstream.chat.android.client.uploader.ProgressTrackerFactory
 import io.getstream.chat.android.core.internal.coroutines.DispatcherProvider
 import io.getstream.chat.android.ui.R
@@ -32,6 +33,7 @@ import io.getstream.chat.android.ui.common.internal.loadAttachmentThumb
 import io.getstream.chat.android.ui.common.style.setTextStyle
 import io.getstream.chat.android.ui.databinding.StreamUiItemFileAttachmentBinding
 import io.getstream.chat.android.ui.message.list.FileAttachmentViewStyle
+import io.getstream.chat.android.ui.message.list.adapter.view.internal.actions.AttachmentActionsAdapter
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.flow.collect
@@ -42,6 +44,7 @@ internal class FileAttachmentsView : RecyclerView {
     var attachmentClickListener: AttachmentClickListener? = null
     var attachmentLongClickListener: AttachmentLongClickListener? = null
     var attachmentDownloadClickListener: AttachmentDownloadClickListener? = null
+    var actionClickListener: AttachmentActionClickListener = AttachmentActionClickListener {  }
 
     private lateinit var style: FileAttachmentViewStyle
 
@@ -70,6 +73,7 @@ internal class FileAttachmentsView : RecyclerView {
             attachmentClickListener = { attachmentClickListener?.onAttachmentClick(it) },
             attachmentLongClickListener = { attachmentLongClickListener?.onAttachmentLongClick() },
             attachmentDownloadClickListener = { attachmentDownloadClickListener?.onAttachmentDownloadClick(it) },
+            actionClickListener = actionClickListener::onAttachmentActionClick,
             style,
         )
         adapter = fileAttachmentsAdapter
@@ -99,6 +103,7 @@ private class FileAttachmentsAdapter(
     private val attachmentClickListener: AttachmentClickListener,
     private val attachmentLongClickListener: AttachmentLongClickListener,
     private val attachmentDownloadClickListener: AttachmentDownloadClickListener,
+    private val actionClickListener: (AttachmentAction) -> Unit,
     private val style: FileAttachmentViewStyle,
 ) : SimpleListAdapter<Attachment, FileAttachmentViewHolder>() {
 
@@ -111,6 +116,7 @@ private class FileAttachmentsAdapter(
                     attachmentClickListener,
                     attachmentLongClickListener,
                     attachmentDownloadClickListener,
+                    actionClickListener,
                     style,
                 )
             }
@@ -137,8 +143,11 @@ private class FileAttachmentViewHolder(
     private val attachmentClickListener: AttachmentClickListener,
     private val attachmentLongClickListener: AttachmentLongClickListener,
     private val attachmentDownloadClickListener: AttachmentDownloadClickListener,
+    private val actionClickListener: (AttachmentAction) -> Unit,
     private val style: FileAttachmentViewStyle,
-) : SimpleListAdapter.ViewHolder<Attachment>(binding.root) {
+
+    ) : SimpleListAdapter.ViewHolder<Attachment>(binding.root) {
+    private val attachmentActionsAdapter: AttachmentActionsAdapter = AttachmentActionsAdapter(actionClickListener)
     private var attachment: Attachment? = null
 
     private var scope: CoroutineScope? = null
@@ -158,6 +167,11 @@ private class FileAttachmentViewHolder(
         }
         binding.actionButton.setOnClickListener {
             attachment?.let(attachmentDownloadClickListener::onAttachmentDownloadClick)
+        }
+
+        binding.attachmentActions.run {
+            adapter = attachmentActionsAdapter
+            layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
         }
     }
 
@@ -222,6 +236,8 @@ private class FileAttachmentViewHolder(
 
             binding.progressBar.indeterminateDrawable = style.progressBarDrawable
             binding.progressBar.isVisible = item.uploadState is Attachment.UploadState.InProgress
+
+            attachmentActionsAdapter.setItems(listOf(AttachmentAction(), AttachmentAction(), AttachmentAction()))
 
             subscribeForProgressIfNeeded(item)
             setupBackground()

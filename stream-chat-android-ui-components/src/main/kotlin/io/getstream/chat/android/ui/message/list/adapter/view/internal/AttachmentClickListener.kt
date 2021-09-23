@@ -1,6 +1,7 @@
 package io.getstream.chat.android.ui.message.list.adapter.view.internal
 
 import io.getstream.chat.android.client.models.Attachment
+import io.getstream.chat.android.client.models.AttachmentAction
 
 internal fun interface AttachmentClickListener {
     fun onAttachmentClick(attachment: Attachment)
@@ -12,4 +13,8 @@ internal fun interface AttachmentLongClickListener {
 
 internal fun interface AttachmentDownloadClickListener {
     fun onAttachmentDownloadClick(attachment: Attachment)
+}
+
+internal fun interface AttachmentActionClickListener {
+    fun onAttachmentActionClick(attachmentAction: AttachmentAction)
 }

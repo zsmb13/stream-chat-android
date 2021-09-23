@@ -22,7 +22,7 @@ public data class Attachment(
     var name: String? = null,
     var fallback: String? = null,
 
-    var actions: List<MessageAction>? = null,
+    var actions: List<AttachmentAction>? = null,
 
     /**
      * The local file to upload when the attachment is sent. The [url] property

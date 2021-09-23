@@ -27,6 +27,7 @@ import com.getstream.sdk.chat.view.EndlessScrollListener
 import com.getstream.sdk.chat.view.messages.MessageListItemWrapper
 import com.getstream.sdk.chat.viewmodel.messages.MessageListViewModel
 import io.getstream.chat.android.client.models.Attachment
+import io.getstream.chat.android.client.models.AttachmentAction
 import io.getstream.chat.android.client.models.Channel
 import io.getstream.chat.android.client.models.Flag
 import io.getstream.chat.android.client.models.Message
@@ -1347,6 +1348,10 @@ public class MessageListView : ConstraintLayout {
 
     public fun interface ReactionViewClickListener {
         public fun onReactionViewClick(message: Message)
+    }
+
+    public fun interface AttachmentActionListener {
+        public fun onAttachmentActionClick(attachmentAction: AttachmentAction)
     }
     //endregion
 

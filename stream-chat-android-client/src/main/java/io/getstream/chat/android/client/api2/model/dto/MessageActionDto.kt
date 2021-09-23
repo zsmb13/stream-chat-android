@@ -4,9 +4,9 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 internal class MessageActionDto(
-    val name: String,
-    val text: String,
-    val style: String,
-    val type: String,
-    val value: String,
+    val name: String? = null,
+    val text: String? = null,
+    val style: String? = null,
+    val type: String? = null,
+    val value: String? = null,
 )
