@@ -10,6 +10,7 @@ import io.getstream.chat.android.client.api.models.SearchMessagesRequest
 import io.getstream.chat.android.client.api.models.SendActionRequest
 import io.getstream.chat.android.client.call.Call
 import io.getstream.chat.android.client.events.ChatEvent
+import io.getstream.chat.android.client.models.AttachmentAction
 import io.getstream.chat.android.client.models.BannedUser
 import io.getstream.chat.android.client.models.BannedUsersSort
 import io.getstream.chat.android.client.models.Channel
@@ -118,6 +119,10 @@ internal interface ChatApi {
         channelId: String,
         message: Message,
     ): Call<Message>
+
+
+    @CheckResult
+    fun runAction(attachmentAction: AttachmentAction): Call<Unit>
 
     @CheckResult
     fun muteChannel(

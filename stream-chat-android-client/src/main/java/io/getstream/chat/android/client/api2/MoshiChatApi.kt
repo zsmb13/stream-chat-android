@@ -35,6 +35,7 @@ import io.getstream.chat.android.client.api2.model.requests.QueryBannedUsersRequ
 import io.getstream.chat.android.client.api2.model.requests.ReactionRequest
 import io.getstream.chat.android.client.api2.model.requests.RejectInviteRequest
 import io.getstream.chat.android.client.api2.model.requests.RemoveMembersRequest
+import io.getstream.chat.android.client.api2.model.requests.RunActionRequest
 import io.getstream.chat.android.client.api2.model.requests.SendActionRequest
 import io.getstream.chat.android.client.api2.model.requests.SendEventRequest
 import io.getstream.chat.android.client.api2.model.requests.SyncHistoryRequest
@@ -53,6 +54,7 @@ import io.getstream.chat.android.client.errors.ChatError
 import io.getstream.chat.android.client.events.ChatEvent
 import io.getstream.chat.android.client.extensions.enrichWithCid
 import io.getstream.chat.android.client.logger.ChatLogger
+import io.getstream.chat.android.client.models.AttachmentAction
 import io.getstream.chat.android.client.models.BannedUser
 import io.getstream.chat.android.client.models.BannedUsersSort
 import io.getstream.chat.android.client.models.Channel
@@ -115,6 +117,14 @@ internal class MoshiChatApi(
             connectionId = connectionId,
             message = MessageRequest(message.toDto()),
         ).map { response -> response.message.toDomain() }
+    }
+
+    override fun runAction(attachmentAction: AttachmentAction): Call<Unit> {
+
+        RunActionRequest(
+
+        )
+        messageApi.runAttachmentAction(attachmentAction)
     }
 
     override fun updateMessage(message: Message): Call<Message> {

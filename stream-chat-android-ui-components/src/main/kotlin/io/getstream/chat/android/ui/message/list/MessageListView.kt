@@ -411,7 +411,7 @@ public class MessageListView : ConstraintLayout {
     }
 
     private val DEFAULT_ATTACHMENT_ACTION_LISTENER = AttachmentActionListener {
-        Toast.makeText(context, "Ha!", Toast.LENGTH_SHORT).show()
+        
     }
 
     private val listenerContainer = MessageListListenerContainerImpl(

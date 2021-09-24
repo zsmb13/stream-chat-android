@@ -111,7 +111,7 @@ internal interface MessageApi {
     ): RetrofitCall<MessagesResponse>
 
     @POST("/messages/{id}/action")
-    fun runMessageAction(
+    fun runAttachmentAction(
         @Path("id") messageId: String,
         @Body runActionRequest: RunActionRequest
     ): RetrofitCall<Unit>
