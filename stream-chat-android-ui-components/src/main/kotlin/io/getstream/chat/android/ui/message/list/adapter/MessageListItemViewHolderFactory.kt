@@ -19,9 +19,10 @@ import io.getstream.chat.android.ui.message.list.adapter.MessageListItemViewType
 import io.getstream.chat.android.ui.message.list.adapter.MessageListItemViewType.THREAD_PLACEHOLDER
 import io.getstream.chat.android.ui.message.list.adapter.MessageListItemViewType.THREAD_SEPARATOR
 import io.getstream.chat.android.ui.message.list.adapter.MessageListItemViewType.TYPING_INDICATOR
-import io.getstream.chat.android.ui.message.list.adapter.attachments.AttachmentAdapterFactory
+import io.getstream.chat.android.ui.message.list.adapter.attachments.AttachmentsAdapter
 import io.getstream.chat.android.ui.message.list.adapter.internal.MessageListItemViewTypeMapper
 import io.getstream.chat.android.ui.message.list.adapter.viewholder.attachment.AttachmentViewFactory
+import io.getstream.chat.android.ui.message.list.adapter.viewholder.attachment.AttachmentViewHolderFactory
 import io.getstream.chat.android.ui.message.list.adapter.viewholder.decorator.internal.DecoratorProvider
 import io.getstream.chat.android.ui.message.list.adapter.viewholder.internal.DateDividerViewHolder
 import io.getstream.chat.android.ui.message.list.adapter.viewholder.internal.ErrorMessageViewHolder
@@ -104,12 +105,16 @@ public open class MessageListItemViewHolderFactory {
     }
 
     protected fun createTextAndAttachmentViewHolder(parentView: ViewGroup): BaseMessageItemViewHolder<out MessageListItem> {
+        val attachmentsAdapter = AttachmentsAdapter(
+            AttachmentViewHolderFactory({}, {}, {}, style)
+        )
+
         return TextAndAttachmentsViewHolder(
             parentView,
             decoratorProvider.decorators,
             listenerContainer,
             markdown,
-            AttachmentAdapterFactory({}, {}, {}, style.fileAttachmentStyle)
+            attachmentsAdapter
         )
     }
 

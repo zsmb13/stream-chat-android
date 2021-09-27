@@ -17,11 +17,11 @@ import io.getstream.chat.android.client.uploader.ProgressTrackerFactory
 import io.getstream.chat.android.core.internal.coroutines.DispatcherProvider
 import io.getstream.chat.android.ui.R
 import io.getstream.chat.android.ui.common.extensions.internal.dpToPxPrecise
-import io.getstream.chat.android.ui.common.internal.SimpleListAdapter
 import io.getstream.chat.android.ui.common.internal.loadAttachmentThumb
 import io.getstream.chat.android.ui.common.style.setTextStyle
 import io.getstream.chat.android.ui.databinding.StreamUiItemFileAttachmentBinding
 import io.getstream.chat.android.ui.message.list.FileAttachmentViewStyle
+import io.getstream.chat.android.ui.message.list.adapter.BaseAttachmentItemViewHolder
 import io.getstream.chat.android.ui.message.list.adapter.view.internal.AttachmentClickListener
 import io.getstream.chat.android.ui.message.list.adapter.view.internal.AttachmentDownloadClickListener
 import io.getstream.chat.android.ui.message.list.adapter.view.internal.AttachmentLongClickListener
@@ -37,7 +37,7 @@ internal class FileAttachmentViewHolder(
     private val attachmentLongClickListener: AttachmentLongClickListener,
     private val attachmentDownloadClickListener: AttachmentDownloadClickListener,
     private val style: FileAttachmentViewStyle,
-) : SimpleListAdapter.ViewHolder<Attachment>(binding.root) {
+) : BaseAttachmentItemViewHolder(binding.root) {
     private var attachment: Attachment? = null
 
     private var scope: CoroutineScope? = null
@@ -98,7 +98,7 @@ internal class FileAttachmentViewHolder(
         }
     }
 
-    override fun bind(item: Attachment) {
+    fun bind(item: Attachment) {
         this.attachment = item
 
         binding.apply {
@@ -143,7 +143,7 @@ internal class FileAttachmentViewHolder(
                     fileProgress.collect { (progress, isComplete) ->
                         val uploadedBytes = (progress / 100F * tracker.maxValue).toLong()
                         updateProgress(
-                            context,
+                            binding.root.context,
                             fileSizeView,
                             binding.progressBar,
                             attachment,
@@ -155,11 +155,6 @@ internal class FileAttachmentViewHolder(
                 }
             }
         }
-    }
-
-    override fun unbind() {
-        clearScope()
-        super.unbind()
     }
 
     private companion object {
@@ -190,5 +185,9 @@ internal class FileAttachmentViewHolder(
                     attachment.upload?.length()?.let(MediaStringUtil::convertFileSizeByteCount)
             }
         }
+    }
+
+    override fun bindData(data: Attachment) {
+        bind(data)
     }
 }

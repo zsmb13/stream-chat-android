@@ -17,8 +17,7 @@ import io.getstream.chat.android.ui.common.markdown.ChatMarkdown
 import io.getstream.chat.android.ui.databinding.StreamUiItemTextAndAttachmentsBinding
 import io.getstream.chat.android.ui.message.list.adapter.MessageListItemPayloadDiff
 import io.getstream.chat.android.ui.message.list.adapter.MessageListListenerContainer
-import io.getstream.chat.android.ui.message.list.adapter.attachments.AttachmentAdapterFactory
-import io.getstream.chat.android.ui.message.list.adapter.attachments.FileAttachmentsAdapter
+import io.getstream.chat.android.ui.message.list.adapter.attachments.AttachmentsAdapter
 import io.getstream.chat.android.ui.message.list.adapter.internal.DecoratedBaseMessageItemViewHolder
 import io.getstream.chat.android.ui.message.list.adapter.viewholder.decorator.internal.Decorator
 import kotlinx.coroutines.CoroutineScope
@@ -34,7 +33,7 @@ internal class TextAndAttachmentsViewHolder(
     decorators: List<Decorator>,
     private val listeners: MessageListListenerContainer,
     private val markdown: ChatMarkdown,
-    private val attachmentAdapterFactory: AttachmentAdapterFactory,
+    private val adapter: AttachmentsAdapter,
     internal val binding: StreamUiItemTextAndAttachmentsBinding = StreamUiItemTextAndAttachmentsBinding.inflate(
         parent.streamThemeInflater,
         parent,
@@ -43,8 +42,6 @@ internal class TextAndAttachmentsViewHolder(
 ) : DecoratedBaseMessageItemViewHolder<MessageListItem.MessageItem>(binding.root, decorators) {
 
     private var scope: CoroutineScope? = null
-
-    private lateinit var adapter: FileAttachmentsAdapter
 
     init {
         binding.run {
@@ -83,13 +80,12 @@ internal class TextAndAttachmentsViewHolder(
     }
 
     private fun setupAttachment(data: MessageListItem.MessageItem) {
-        adapter = attachmentAdapterFactory.adapter(data.message.attachments)
         binding.run {
             attachmentsRecycler.layoutManager = LinearLayoutManager(context)
             attachmentsRecycler.adapter = adapter
         }
 
-        adapter.setItems(data.message.attachments)
+        adapter.submitList(data.message.attachments)
     }
 
     private fun clearScope() {
