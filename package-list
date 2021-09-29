@@ -48,6 +48,7 @@ module:stream-chat-android-compose
 io.getstream.chat.android.compose.handlers
 io.getstream.chat.android.compose.state
 io.getstream.chat.android.compose.state.channel.list
+io.getstream.chat.android.compose.state.imagepreview
 io.getstream.chat.android.compose.state.messages
 io.getstream.chat.android.compose.state.messages.attachments
 io.getstream.chat.android.compose.state.messages.items
@@ -97,6 +98,8 @@ io.getstream.chat.android.offline.thread
 io.getstream.chat.android.offline.utils
 module:stream-chat-android-pushprovider-firebase
 io.getstream.chat.android.pushprovider.firebase
+module:stream-chat-android-pushprovider-huawei
+io.getstream.chat.android.pushprovider.huawei
 module:stream-chat-android-ui-common
 com.getstream.sdk.chat
 com.getstream.sdk.chat.adapter
