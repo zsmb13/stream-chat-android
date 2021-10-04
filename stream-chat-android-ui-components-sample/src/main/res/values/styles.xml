@@ -91,4 +91,15 @@
         <item name="streamUiAvatarOnlineIndicatorEnabled">false</item>
     </style>
 
+    <style name="NewAttachmentGalleryTheme" parent="@style/StreamUi.AttachmentGallery">
+        <item name="streamUiAttachmentGalleryOptionsStyle">NewOptions</item>
+    </style>
+
+    <style name="NewOptions">
+        <item name="streamUiAttachmentReplyEnabled">true</item>
+        <item name="streamUiShowInChatEnabled">false</item>
+        <item name="streamUiSaveImageEnabled">false</item>
+        <item name="streamUiDeleteEnabled">false</item>
+    </style>
+
 </resources>
