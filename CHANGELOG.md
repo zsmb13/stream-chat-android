@@ -7,6 +7,7 @@
 - Make our SDK compile-friendly with TargetSDK 31
 
 ### ✅ Added
+- Create new artifact to integrate Xiaomi Mi Push with Stream. You will need to add  `stream-chat-android-pushprovider-xiaomi` artifact to your App. Check our [docs](https://getstream.io/chat/docs/sdk/android/client/guides/push-notifications/xiaomi) for further details.
 
 ### ⚠️ Changed
 - 🚨 Breaking change: `ProgressCallback` is not invoked on main thread anymore. So make sure to handle it if you were previously using this callback to update the UI directly.
@@ -138,6 +139,18 @@
 
 ### ✅ Added
 
+### ⚠️ Changed
+
+### ❌ Removed
+
+## stream-chat-android-pushprovider-xiaomi
+### 🐞 Fixed
+
+### ⬆️ Improved
+
+### ✅ Added
+- Added a `XiaomiMessagingDelegate` class to simplify custom implementations of `PushMessageReceiver` that forward messages to the SDK. See [Using a Custom PushMessageReceiver](https://getstream.io/chat/docs/sdk/android/client/guides/push-notifications/huawei#using-a-custom-pushmessagereceiver) for more details.
+- 
 ### ⚠️ Changed
 
 ### ❌ Removed
