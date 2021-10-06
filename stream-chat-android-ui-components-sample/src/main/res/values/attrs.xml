@@ -10,4 +10,6 @@
         <attr name="optionText" format="string|reference" />
         <attr name="optionIcon" format="reference" />
     </declare-styleable>
+
+    <attr name="primaryHighEmphasis"/>
 </resources>

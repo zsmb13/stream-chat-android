@@ -14,6 +14,17 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
+    <TextView
+        android:id="@+id/workingView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?primaryHighEmphasis"
+        android:text="Hello world"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messagesHeaderView"
+        />
+
     <io.getstream.chat.android.ui.message.list.MessageListView
         android:id="@+id/messageListView"
         android:layout_width="0dp"
@@ -23,11 +34,18 @@
         app:layout_constraintBottom_toTopOf="@+id/messageInputView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/messagesHeaderView"
+        app:layout_constraintTop_toBottomOf="@id/workingView"
         app:streamUiFlagMessageConfirmationEnabled="true"
         app:streamUiMuteUserEnabled="false"
-        app:streamUiPinMessageEnabled="true"
-        />
+        app:streamUiPinMessageEnabled="true">
+        <TextView
+            android:id="@+id/brokenView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?colorAccent"
+            android:text="Yoy can not see me"
+            />
+    </io.getstream.chat.android.ui.message.list.MessageListView>
 
     <io.getstream.chat.android.ui.message.input.MessageInputView
         android:id="@+id/messageInputView"

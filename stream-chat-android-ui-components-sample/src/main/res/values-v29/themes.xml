@@ -8,6 +8,7 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="streamUiTheme">@style/StreamTheme</item>
+        <item name="primaryHighEmphasis">@android:color/holo_orange_dark</item>
     </style>
 
     <style name="StreamTheme" parent="@style/StreamUiTheme">
