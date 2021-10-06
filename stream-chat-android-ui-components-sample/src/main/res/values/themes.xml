@@ -9,6 +9,7 @@
 
     <style name="StreamTheme" parent="@style/StreamUiTheme">
         <item name="streamUiChannelActionsDialogStyle">@style/ChannelActionsDialogTheme</item>
+        <item name="primaryHighEmphasis">@android:color/holo_orange_dark</item>
     </style>
 
     <style name="ChannelActionsDialogTheme" parent="StreamUi.ChannelList.ActionsDialog" >
