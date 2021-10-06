@@ -42,7 +42,7 @@
             android:id="@+id/brokenView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="?colorAccent"
+            android:textColor="?primaryHighEmphasis"
             android:text="Yoy can not see me"
             />
     </io.getstream.chat.android.ui.message.list.MessageListView>
