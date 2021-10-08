@@ -594,10 +594,6 @@ public sealed interface ChatDomain {
 
         private val offlineChatDomainBuilder: OfflineChatDomainBuilder = OfflineChatDomainBuilder(appContext, client)
 
-        internal fun database(db: ChatDatabase) = apply {
-            offlineChatDomainBuilder.database(db)
-        }
-
         public fun enableBackgroundSync(): Builder = apply {
             offlineChatDomainBuilder.enableBackgroundSync()
         }
