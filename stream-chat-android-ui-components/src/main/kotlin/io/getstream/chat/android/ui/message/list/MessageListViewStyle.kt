@@ -59,12 +59,12 @@ import io.getstream.chat.android.ui.message.list.internal.ScrollButtonView
  * @property threadMessagesStart Thread messages start at the bottom or top of the screen. Default: bottom.
  */
 public data class MessageListViewStyle(
-    public val scrollButtonViewStyle: ScrollButtonViewStyle,
-    public val scrollButtonBehaviour: MessageListView.NewMessagesBehaviour,
-    public val itemStyle: MessageListItemStyle,
-    public val giphyViewHolderStyle: GiphyViewHolderStyle,
-    public val replyMessageStyle: MessageReplyStyle,
-    public val reactionsEnabled: Boolean,
+    val scrollButtonViewStyle: ScrollButtonViewStyle,
+    val scrollButtonBehaviour: MessageListView.NewMessagesBehaviour,
+    val itemStyle: MessageListItemStyle,
+    val giphyViewHolderStyle: GiphyViewHolderStyle,
+    val replyMessageStyle: MessageReplyStyle,
+    val reactionsEnabled: Boolean,
     @ColorInt public val backgroundColor: Int,
     val replyIcon: Int,
     val replyEnabled: Boolean,
@@ -97,8 +97,8 @@ public data class MessageListViewStyle(
     @ColorInt val optionsOverlayDimColor: Int,
     val emptyViewTextStyle: TextStyle,
     @LayoutRes public val loadingView: Int,
-    public val messagesStart: Int,
-    public val threadMessagesStart: Int,
+    val messagesStart: Int,
+    val threadMessagesStart: Int,
 ) {
 
     internal companion object {
